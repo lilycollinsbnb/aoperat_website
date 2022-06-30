@@ -71,17 +71,11 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Kontakt
               </Link>
-              <Link className="navbar-item" to="/faq">
-                FAQ
-              </Link>
-              <Link className="navbar-item" to="/terms-and-conditions">
-                Regulamin
-              </Link>
             </div>
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
-                href="https://aoperat.azurewebsites.net/"
+                href="https://panel2.aoperat.pl/start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
