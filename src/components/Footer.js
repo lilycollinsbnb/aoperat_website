@@ -60,6 +60,11 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
+                      <Link className="navbar-item" to="/privacy-policy">
+                        Polityka prywatności
+                      </Link>
+                    </li>
+                    <li>
                       <a
                         className="navbar-item"
                         href="/admin/"
