@@ -5,19 +5,19 @@ title: Polityka prywatności
 ---
 POLITYKA PRYWATNOŚCI 
 ORAZ WYKORZYSTYWANIA PLIKÓW COOKIES 
-W SERWISIE INTERNETOWYM _______________
-ORAZ APLIKACJI __________________
+W SERWISIE INTERNETOWYM AOPERAT
+ORAZ APLIKACJI AOPERAT
 
 #### 1.	Informacje ogólne
-1.1.	Niniejszy dokument dotyczy przetwarzania oraz ochrony danych osobowych dotyczących Użytkowników w związku z korzystaniem przez nich z serwisu internetowego ____________ oraz aplikacji _______________.
+1.1.	Niniejszy dokument dotyczy przetwarzania oraz ochrony danych osobowych dotyczących Użytkowników w związku z korzystaniem przez nich z serwisu internetowego AOperat oraz aplikacji AOperat.
 
 1.2.	Definicje:
 
 1.2.1.	Administrator danych osobowych – AOperat Prosta Spółka Akcyjna z siedzibą w Stalowej Woli, ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy w  Rzeszowie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000969870, NIP: 8652579906, REGON 52191966500000, o kapitale zakładowym w wysokości 6 250,00 zł (wpłaconym w całości) (dalej: „AOperat”);
 
-1.2.2.	Portal/Serwis – serwis internetowy ____________ (działający pod adresem _______________);
+1.2.2.	Portal/Serwis – serwis internetowy AOperat (działający pod adresem https://panel2.aoperat.pl/start);
 
-1.2.3.	Aplikacja – aplikacja mobilna lub strona mobilna ___________, za pomocą której można korzystać z funkcjonalności serwisu oraz oferowanych przez AOperat usług;
+1.2.3.	Aplikacja – aplikacja mobilna lub strona mobilna AOperat, za pomocą której można korzystać z funkcjonalności serwisu oraz oferowanych przez AOperat usług;
 
 1.2.4.	Użytkownik – osoba fizyczna/ prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej, której ustawa przyznaje zdolność prawną, korzystająca z serwisu/aplikacji, będąca usługobiorcą, która przy pomocy formularza rejestracyjnego udostępnionego w Serwisie lub aplikacji utworzyła indywidualne elektroniczne konto na potrzeby korzystania z Serwisu lub aplikacji;
 
