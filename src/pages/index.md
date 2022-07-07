@@ -7,9 +7,9 @@ subheading: Kochamy nieruchomości oraz pracę związaną z nimi. Pracujemy blis
   klientami, aby szybko dostarczyć operaty nieruchomości w sposób dokładny i
   ustandaryzowany.
 mainpitch:
-  title: Dlaczego warto skorzystać z Aoperat?
+  title: Dlaczego warto skorzystać z AOperat?
   description: >
-    Aoperat pozwoli ci zaoszczędzić cenny czas przyspieszając proces
+    AOperat pozwoli ci zaoszczędzić cenny czas przyspieszając proces
     sporządzania operatu poprzez automatyzację tego procesu.
 description: W naszej codziennej pracy zauważyliśmy, że klienci za długo czekają
   na wykonanie operatu szacunkowego. Operaty między rzeczoznawcami są różnej

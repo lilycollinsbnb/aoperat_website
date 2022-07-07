@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Startujemy
 date: 2021-01-27T16:07:32.795Z
-description: Prace nad platformą Aoperat wystartowały.
+description: Prace nad platformą AOperat wystartowały.
 featuredpost: false
 featuredimage: /img/blog-post-1.jpg
 tags:

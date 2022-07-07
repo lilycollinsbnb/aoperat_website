@@ -2,8 +2,8 @@
 templateKey: blog-post
 title: Mamy prototyp
 date: 2021-12-30T13:10:23.795Z
-description: Udało się nam stworzyć pierwszy prototyp platformy Aoperat i filmik
-  demonstrujący w jaki sposób można z niej korzystać.
+description: Udało się nam stworzyć pierwszy prototyp platformy AOperat i
+  materiał demonstrujący w jaki sposób można z niej korzystać.
 featuredpost: false
 featuredimage: /img/prototype.jpg
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 ![](/img/prototype.jpg)
 
-Przygotowaliśmy krótki filmik przedstawiający naszą platformę. Cały zespoł pracował nad pomysłem, implementacją, bezpieczeństwem danych, skalowalnością i uzytecznością dla klientów. Wiele rozwiązań zostalo kompletnie zmienione w ciągu tego roku. Zaczynaliśmy jako generator PDFów, a teraz rozwijamy platforme komunikacyjną między zleceniodawcami, a rzeczoznawcami. W tym krótkim filmiku chcielismy przedstawić platforme na koniec 2021 roku, jak można wygenerować operat oraz interakcje między komornikiem, a rzeczoznawcą. Życzymy miłego oglądania.
+Przygotowaliśmy krótki materiał przedstawiający naszą platformę. Cały zespół pracował nad pomysłem, implementacją, bezpieczeństwem danych, skalowalnością i użytecznością dla klientów. Wiele rozwiązań zostało kompletnie zmienione w ciągu tego roku. Zaczynaliśmy jako generator PDFów, a teraz rozwijamy platformę komunikacyjną między zleceniodawcami, a rzeczoznawcami. W tym krótkim filmiku chcieliśmy przedstawić platformę na koniec 2021 roku, jak można wygenerować operat oraz interakcje między komornikiem, a rzeczoznawcą. Życzymy miłego oglądania.
 
 Zespół AOperat.pl
 
