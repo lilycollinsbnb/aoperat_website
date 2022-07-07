@@ -9,13 +9,14 @@ W SERWISIE INTERNETOWYM AOPERAT
 ORAZ APLIKACJI AOPERAT
 
 #### 1.	Informacje ogólne
+
 1.1.	Niniejszy dokument dotyczy przetwarzania oraz ochrony danych osobowych dotyczących Użytkowników w związku z korzystaniem przez nich z serwisu internetowego AOperat oraz aplikacji AOperat.
 
 1.2.	Definicje:
 
 1.2.1.	Administrator danych osobowych – AOperat Prosta Spółka Akcyjna z siedzibą w Stalowej Woli, ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy w  Rzeszowie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000969870, NIP: 8652579906, REGON 52191966500000, o kapitale zakładowym w wysokości 6 250,00 zł (wpłaconym w całości) (dalej: „AOperat”);
 
-1.2.2.	Portal/Serwis – serwis internetowy AOperat (działający pod adresem https://panel2.aoperat.pl/start);
+1.2.2.	Portal/Serwis – serwis internetowy AOperat (działający pod adresem https://aoperat.pl);
 
 1.2.3.	Aplikacja – aplikacja mobilna lub strona mobilna AOperat, za pomocą której można korzystać z funkcjonalności serwisu oraz oferowanych przez AOperat usług;
 
@@ -25,7 +26,7 @@ ORAZ APLIKACJI AOPERAT
 
 1.2.6.	Regulamin – regulamin świadczenia usług drogą elektroniczną w ramach Portalu, w myśl art. 8 Ustawy o świadczeniu usług drogą elektroniczną.
 
-#### 2.	Administrator danych osobowych 
+#### 2.	Administrator danych osobowych
 
 2.1.	Administratorem danych osobowych– AOperat Prosta Spółka Akcyjna z siedzibą w Stalowej Woli.
 
@@ -33,7 +34,7 @@ ORAZ APLIKACJI AOPERAT
 
 2.2.1.	Formularza kontaktowego udostępnionego w portalu oraz aplikacji;
 
-2.2.2.	Poczty elektronicznej – za pośrednictwem adresu poczty elektronicznej: _________@________;
+2.2.2.	Poczty elektronicznej – za pośrednictwem adresu poczty elektronicznej: **_**@**\_\_\_\_**;
 
 2.2.3.	Listownie na adres administratora danych osobowych z dopiskiem RODO - ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola.
 
@@ -48,6 +49,7 @@ ORAZ APLIKACJI AOPERAT
 3.4.	W ramach świadczenia usług i funkcjonowaniu serwisu/aplikacji AOperat zbiera następujące dane użytkowników lub dane osób przez nich wskazanych, o ile ci zdecydowali się na ich podanie:
 
 3.4.1.	adres poczty elektronicznej (e-mail);
+
 3.4.2.	imię i nazwisko;
 
 3.4.3.	data urodzenia;
@@ -70,7 +72,7 @@ ORAZ APLIKACJI AOPERAT
 
 3.4.12.	pliki cookies.
 
-#### 4.	Cel i podstawa przetwarzania danych osobowych 
+#### 4.	Cel i podstawa przetwarzania danych osobowych
 
 4.1.	Dane będą przetwarzane przez AOperat w następujących celach:
 
@@ -96,7 +98,7 @@ ORAZ APLIKACJI AOPERAT
 
 4.2.4.	uzasadnionego interesu administratora – np. w odniesieniu do przetwarzania danych osobowych w celu wykrywania nadużyć, korzystania z nieautoryzowanych narzędzi, przeprowadzania pomiarów statystycznych i analitycznych mających na celu udoskonalanie działania serwisu/aplikacji (zgodnie z art. 6 ust. 1. lit. f) RODO).
 
-#### 5.	Czas przetwarzania danych osobowych 
+#### 5.	Czas przetwarzania danych osobowych
 
 5.1.	AOperat przetwarza dane osobowe do czasu istnienia podstawy do ich przetwarzania, tj. w przypadku:
 
@@ -126,7 +128,7 @@ ORAZ APLIKACJI AOPERAT
 
 6.2.	Celem realizacji uprawnień oraz uzyskania wszelkich niezbędnych danych użytkownik może skontaktować się z administratorem danych osobowych w sposób wskazany w ust. 2.2. powyżej.
 
-#### 7.	Udostępnianie danych osobowych podmiotom trzecim 
+#### 7.	Udostępnianie danych osobowych podmiotom trzecim
 
 7.1.	W ramach funkcjonowania serwisu/aplikacji AOperat może udostępniać dane użytkowników zaufanym partnerom – w szczególności podmiotom świadczącym na rzecz AOperat usługi niezbędne do funkcjonowania serwisu/aplikacji. Powyższe odnosi się w szczególności do podmiotów współpracujących z AOperat w zakresie: administracyjnym, księgowym, technologicznym (np. Facebook, Google, Twitter – m.in. w celu umożliwienia użytkownikowi logowania za pośrednictwem kont założonych w ww. portalach), usługowym czy reklamowym.
 
