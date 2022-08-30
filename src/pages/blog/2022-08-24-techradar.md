@@ -30,4 +30,4 @@ Elementy każdej sekcji dzielą się na 3 kategorie:
 
 Po kliknięciu na sekcję wyświetlają się wszystkie jej elementy z podziałem na kategorie. Każdy element posiada opis tego czym jest i jakie są jego zastosowania. Techradar pomaga nam we wprowadzaniu zmian w stosie technologicznym i sposobie pracy ze względu na przejrzystą prezentację graficzną i podział na sekcje i kategorie.
 
-AOperat Techradar - [techradar.aoperat.pl](techradar.aoperat.pl/)
+AOperat Techradar - [techradar.aoperat.pl](https://techradar.aoperat.pl)

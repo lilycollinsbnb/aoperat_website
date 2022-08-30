@@ -49,7 +49,7 @@ class BlogRollTemplate extends React.Component {
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
+                  {post.frontmatter.description.substring(0,400)}
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
@@ -84,7 +84,6 @@ export default function BlogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
                 id
                 fields {
                   slug
@@ -93,6 +92,7 @@ export default function BlogRoll() {
                   title
                   templateKey
                   date(formatString: "DD-MM-YYYY")
+                  description
                   featuredpost
                   featuredimage {
                     childImageSharp {
