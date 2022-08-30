@@ -18,25 +18,21 @@ tags:
   - samouczek
   - rzeczoznawca
 ---
-
-
-
-
 ### 1. Jak zacząć korzystać z platformy AOperat
 
-Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu operatora, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie odpowiedniego formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. 
+Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu rzeczoznawcy, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie odpowiedniego formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza.
 
 ![](/img/sidebar_client_appraiser_form.png)
-
-Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza. Po wypełnieniu i przesłaniu formularza administracja AOperat zweryfikuje go i przyzna promocję do roli operatora.
 
 ![](/img/appraiser_form_1.png)
 
 ![](/img/appraiser_form_2.png)
 
+Administracja AOperat zweryfikuje przesłany formularz i przyzna Ci uprawnienia rzeczoznawcy. Uprawnienia rzeczoznawcy dają możliwość przeglądania zleceń wystawionych przez klientów, składania ofert zleceniodawcom, korzystania z naszego generatora operatów, podpisywanie operatów podpisem cyfrowym oraz przesyłanie gotowego operatu do klienta bezpośrednio z platformy. W kolejnych rozdziałach opiszemy jak to robić.
+
 ### 2. Giełda zleceń
 
-Po otrzymaniu uprawnień operatora na giełdzie zleceń będziesz widzieć zlecenia innych użytkowników. Aby wyświetlić listę zleceń wybierz pozycję giełda zleceń znajdującą się w menu bocznym.
+Po otrzymaniu uprawnień rzeczoznawcy na giełdzie zleceń będziesz widzieć zlecenia innych użytkowników. Aby wyświetlić listę zleceń wybierz pozycję giełda zleceń znajdującą się w menu bocznym.
 
 ![](/img/sidebar_operator_market.png)
 
@@ -78,11 +74,9 @@ Operat można stworzyć na dwa sposoby, albo do opłaconego zlecenia w widoku GI
 
 Operaty stworzone na rzecz zlecenia są objęte prowizją dla platformy AOperat. Od operatów stworzonych i wygenerowanych bez zlecenia nie bierzemy prowizji. Zamiast tego wymagane jest wykupienie subskrypcji miesięcznej za korzystanie z naszego generatora na potrzeby tworzenia i generowania operatów dla klientów spoza platformy. Subskrypcja ma miesięczny limit tworzenia i generacji operatu z możliwością powiększenia limitu jeśli będzie to potrzebne.
 
-Po stworzeniu operatu rzeczoznawca ma dwie możliwości a mianowicie skorzystać z generatora operatów dostępnego na platformie AOperat lub wgrać pdf z gotowym operatem przygotowanym poza platformą AOperat. W widoku OPERATY kliknij na odpowiedni operat, aby rozwinąć menu. Dla świeżo stworzonego operatu powinny być aktywne 4 przyciski POKAŻ WNIOSEK, KOPIUJ OPERAT, WGRAJ OPERAT(jeśli zleceniodawca nie zaznaczył opcji, że wymaga skorzystania z szablonu AOperat)  i USUŃ OPERAT. 
+Po stworzeniu operatu rzeczoznawca ma dwie możliwości a mianowicie skorzystać z generatora operatów dostępnego na platformie AOperat lub wgrać pdf z gotowym operatem przygotowanym poza platformą AOperat. W widoku OPERATY kliknij na operat, aby rozwinąć menu. Dla świeżo stworzonego operatu powinny być aktywne 4 przyciski POKAŻ WNIOSEK, KOPIUJ OPERAT, WGRAJ OPERAT(jeśli zleceniodawca nie zaznaczył opcji, że wymaga skorzystania z szablonu AOperat)  i USUŃ OPERAT. 
 
 ![](/img/operats_expanded_1.png)
-
-![](/img/operats_expanded_2.png)
 
 Przycisk KOPIUJ nie kopiuje całości operatu, a tworzy on operat o takiej samej nazwie i informacjach o zleceniodawcy i zleceniu. Znajduje on zastosowanie gdy rzeczoznawca sporządza więcej niż jeden operat na potrzeby zlecenia. 
 
@@ -229,5 +223,7 @@ Możesz oczywiście skorzystać z obu opcji jednocześnie oraz wprowadzić dowol
 ![](/img/operats_send_operat_window_add_email_send.png)
 
 ### Dziękujemy za zapoznanie się z samouczkiem!
+
 #### Pozdrawiamy,
-#### Administracja AOperat
+
+#### Zespół AOperat
