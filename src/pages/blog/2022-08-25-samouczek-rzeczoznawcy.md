@@ -11,7 +11,7 @@ description: Rzeczoznawcy są integralną częścią naszej platformy i mogą
   jaki sposób możesz korzystać z naszej platformy zachęcamy do przeczytania
   dalszej części artykułu.
 featuredpost: true
-featuredimage: /img/blog-index1.jpg
+featuredimage: /img/aoperat_logo.png
 tags:
   - aoperat
   - poradnik
@@ -20,7 +20,7 @@ tags:
 ---
 ### 1. Jak zacząć korzystać z platformy AOperat
 
-Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu rzeczoznawcy, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie odpowiedniego formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza.
+Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje Ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu rzeczoznawcy, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie odpowiedniego formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza.
 
 ![](/img/sidebar_client_appraiser_form.png)
 
@@ -46,7 +46,7 @@ W danych zlecenia znajdziesz informacje takie jak, opis zlecenia, adres nierucho
 
 ![](/img/market_expanded_row_order_data.png)
 
-W informacjach o zleceniodawcy znajdziesz adres zamieszkania i adres e-mail zleceniodawcy. Oprócz tego wyświetli ci się również możliwość wysłania wiadomości zleceniodawcy. Jeśli jesteś zainteresowany realizacją zlecenia wybierz kliknij przycisk składanie oferty i wypełnij rozwinięty formularz. Wymagamy od ciebie podania ceny za jaką podejmiesz się wykonania zlecenia, przewidywanego czasu realizacji zlecenia i krótkiego opisu oferty.
+W informacjach o zleceniodawcy znajdziesz adres zamieszkania i adres e-mail zleceniodawcy. Oprócz tego wyświetli Ci się również możliwość wysłania wiadomości zleceniodawcy. Jeśli jesteś zainteresowany realizacją zlecenia wybierz kliknij przycisk składanie oferty i wypełnij rozwinięty formularz. Wymagamy od ciebie podania ceny za jaką podejmiesz się wykonania zlecenia, przewidywanego czasu realizacji zlecenia i krótkiego opisu oferty.
 
 ![](/img/market_expanded_row_make_offer.png)
 
@@ -64,8 +64,6 @@ Operat można stworzyć na dwa sposoby, albo do opłaconego zlecenia w widoku GI
 
 ![](/img/sidebar_operator_operats.png)
 
-![](/img/operats.png)
-
 ![](/img/operats_create_operat.png)
 
 ![](/img/operats_create_operat_expanded.png)
@@ -76,7 +74,7 @@ Operaty stworzone na rzecz zlecenia są objęte prowizją dla platformy AOperat.
 
 Po stworzeniu operatu rzeczoznawca ma dwie możliwości a mianowicie skorzystać z generatora operatów dostępnego na platformie AOperat lub wgrać pdf z gotowym operatem przygotowanym poza platformą AOperat. W widoku OPERATY kliknij na operat, aby rozwinąć menu. Dla świeżo stworzonego operatu powinny być aktywne 4 przyciski POKAŻ WNIOSEK, KOPIUJ OPERAT, WGRAJ OPERAT(jeśli zleceniodawca nie zaznaczył opcji, że wymaga skorzystania z szablonu AOperat)  i USUŃ OPERAT. 
 
-![](/img/operats_expanded_1.png)
+![](/img/operats_expanded_after_creation.png)
 
 Przycisk KOPIUJ nie kopiuje całości operatu, a tworzy on operat o takiej samej nazwie i informacjach o zleceniodawcy i zleceniu. Znajduje on zastosowanie gdy rzeczoznawca sporządza więcej niż jeden operat na potrzeby zlecenia. 
 
@@ -84,13 +82,13 @@ Przycisk KOPIUJ nie kopiuje całości operatu, a tworzy on operat o takiej samej
 
 Wgrywanie operatu spoza platformy jest bardzo proste, przycisk wgraj operat otwiera okienko, które pozwala na przeglądanie plików znajdujących się na dysku. Wybierz plik z gotowym operatem. Po zatwierdzeniu pliku zostanie on automatycznie przesłany na platformę AOperat i będzie gotowy do podpisania.
 
-![](/img/operats_expanded_2_upload_operat.png)
+![](/img/operats_expanded_after_creation_upload.png)
 
 #### 3.2. Generowanie operatu za pomocą platformy
 
 Do skorzystania z naszego generatora operatów służy przycisk POKAŻ WNIOSEK. Przechodzi on do strony formularza, gdzie można uzupełnić dane potrzebne do wygenerowania operatu. 
 
-![](/img/operats_expanded_1_show_form.png)
+![](/img/operats_expanded_after_creation_show_form.png)
 
 Formularz zawiera 3 sekcje DANE OPISOWE, PLIKI CSV i ZDJĘCIA oraz przycisk GENERUJ. Jeśli dane nie są uzupełnione przycisk GENERUJ jest wyłączony a obok niego pojawia się pytajnik. Po najechaniu na ikonkę pytajnika wyświetla się informacja o tym, które z sekcji nie są jeszcze uzupełnione. Pozostałe przyciski rozwijają poszczególne sekcje. 
 
@@ -105,6 +103,8 @@ Sekcja dane opisowe dla wcześniej wspomnianego rodzaju operatu zawiera informac
 ![](/img/generate_operat_form_data.png)
 
 Sekcja PLIKI CSV zawiera dane transakcyjne. Dane transakcyjne można wprowadzać ręcznie linia po linii lub zaimportować je z odpowiednio przygotowanego pliku csv. Import cen z pliku jest bardzo prosty. Kliknij przycisk WYBIERZ PLIK, aby otworzyć okno do wybierania plików. Po wysłaniu pliku kliknij przycisk IMPORTUJ. Po krótkiej chwili ceny transakcyjne powinny pojawić się na ekranie. Zaimportowane dane nie są jeszcze zapisane w systemie. Jeśli chcesz je zapisać kliknij przycisk WYŚLIJ DANE. 
+
+![](/img/generate_operat_form_csv.png)
 
 ![](/img/generate_operat_form_csv_from_file.png)
 
@@ -152,7 +152,7 @@ Aby wygenerować certyfikat na naszej platformie kliknij przycisk PODPISZ, nast�
 
 ![](/img/operats_sign_own_certificate.png)
 
-Na ekranie wyświetli ci się okno, gdzie będzie możliwość podpisania operatu, ale jako, że nie masz jeszcze certyfikatu kliknij przycisk PRZEJDŹ DO GENEROWANIA CERTYFIKATU. 
+Na ekranie wyświetli Ci się okno, gdzie będzie możliwość podpisania operatu, ale jako, że nie masz jeszcze certyfikatu kliknij przycisk PRZEJDŹ DO GENEROWANIA CERTYFIKATU. 
 
 ![](/img/operats_sign_own_certificate_generate.png)
 
@@ -182,7 +182,7 @@ W przypadku podpisu profilem zaufanym lub podpisu sporządzanego poza platformą
 
 ![](/img/operats_download.png)
 
-W przypadku podpisu profilem zaufanym kliknij przycisk PODPISZ, wybierz opcję PROFIL ZAUFANY, która przeniesie cię na stronę profilu zaufanego, gdzie będziesz mieć możliwość podpisać plik po zalogowaniu się na swoje konto profilu zaufanego. 
+W przypadku podpisu profilem zaufanym kliknij przycisk PODPISZ, wybierz opcję PROFIL ZAUFANY, która przeniesie Cię na stronę profilu zaufanego, gdzie będziesz mieć możliwość podpisać plik po zalogowaniu się na swoje konto profilu zaufanego. 
 
 ![](/img/operats_sign.png)
 
@@ -195,6 +195,10 @@ Plik podpisany profilem zaufanym lub innym sposobem poza platformą możesz wgra
 Po przesłaniu pliku jeśli podpis jest poprawny powinien odblokować się przycisk WYŚLIJ.
 
 ![](/img/operats_send_operat.png)
+
+Po podpisaniu operatu, można pobrać go wraz z podpisem przyciskiem POBIERZ. 
+
+![](/img/operats_download_after_sign.png)
 
 ### 5. Wysyłanie operatu
 
@@ -216,11 +220,13 @@ Aby dodać innego odbiorcę wprowadź jego adres email w polu "Podaj adres email
 
 ![](/img/operats_send_operat_window_add_email.png)
 
+
+
+![](/img/operats_send_operat_window_add_email_added.png)
+
 Możesz oczywiście skorzystać z obu opcji jednocześnie oraz wprowadzić dowolną liczbę odbiorców. Po wprowadzeniu wszystkich odbiorców naciśnij przycisk WYŚLIJ.
 
-![](/img/operats_send_confirm.png)
-
-![](/img/operats_send_operat_window_add_email_send.png)
+![](/img/operats_send_operat_window_send_confirm.png)
 
 ### Dziękujemy za zapoznanie się z samouczkiem!
 
