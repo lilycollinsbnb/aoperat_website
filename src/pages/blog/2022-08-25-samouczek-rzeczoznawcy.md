@@ -20,7 +20,7 @@ tags:
 ---
 ### 1. Jak zacząć korzystać z platformy AOperat
 
-Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje Ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu rzeczoznawcy, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie odpowiedniego formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza.
+Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje Ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu rzeczoznawcy, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza.
 
 ![](/img/sidebar_client_appraiser_form.png)
 
@@ -32,7 +32,7 @@ Administracja AOperat zweryfikuje przesłany formularz i przyzna Ci uprawnienia 
 
 ### 2. Giełda zleceń
 
-Po otrzymaniu uprawnień rzeczoznawcy na giełdzie zleceń będziesz widzieć zlecenia innych użytkowników. Aby wyświetlić listę zleceń wybierz pozycję giełda zleceń znajdującą się w menu bocznym.
+Po otrzymaniu uprawnień rzeczoznawcy na giełdzie zleceń będziesz widzieć zlecenia innych użytkowników. Aby wyświetlić listę zleceń wybierz pozycję GIEŁDA ZLECEŃ znajdującą się w menu bocznym.
 
 ![](/img/sidebar_operator_market.png)
 
@@ -46,7 +46,7 @@ W danych zlecenia znajdziesz informacje takie jak, opis zlecenia, adres nierucho
 
 ![](/img/market_expanded_row_order_data.png)
 
-W informacjach o zleceniodawcy znajdziesz adres zamieszkania i adres e-mail zleceniodawcy. Oprócz tego wyświetli Ci się również możliwość wysłania wiadomości zleceniodawcy. Jeśli jesteś zainteresowany realizacją zlecenia wybierz kliknij przycisk składanie oferty i wypełnij rozwinięty formularz. Wymagamy od ciebie podania ceny za jaką podejmiesz się wykonania zlecenia, przewidywanego czasu realizacji zlecenia i krótkiego opisu oferty.
+W informacjach o zleceniodawcy znajdziesz adres zamieszkania i adres e-mail zleceniodawcy. Oprócz tego wyświetli Ci się również możliwość wysłania wiadomości zleceniodawcy. Jeśli jesteś zainteresowany realizacją zlecenia kliknij przycisk składanie oferty i wypełnij rozwinięty formularz. Wymagamy od ciebie podania ceny za jaką podejmiesz się wykonania zlecenia, przewidywanego czasu realizacji zlecenia i krótkiego opisu oferty.
 
 ![](/img/market_expanded_row_make_offer.png)
 
@@ -60,7 +60,7 @@ Jeśli klient zaakceptuje i opłaci twoją ofertę to po rozwinięciu zlecenia p
 
 ### 3. Tworzenie i generowanie operatu
 
-Operat można stworzyć na dwa sposoby, albo do opłaconego zlecenia w widoku GIEŁDA ZLECEŃ tak jak zostało to opisane w rozdziale powyżej albo bez zlecenia w widoku OPERATY. Aby stworzyć operat bez zlecenia w widoku OPERATY wciśnij przycisk TWORZENIE OPERATU, który rozwija formularz tworzenia operatu. Do uzupełnienia są 2 pola tytuł i rodzaj operatu. Formularz zatwierdź przyciskiem STWÓRZ OPERAT. 
+Operat można stworzyć na dwa sposoby, albo do opłaconego zlecenia w widoku GIEŁDA ZLECEŃ tak jak zostało to opisane w rozdziale powyżej albo bez zlecenia w widoku OPERATY. Aby stworzyć operat bez zlecenia w widoku OPERATY kliknij przycisk TWORZENIE OPERATU, który rozwija formularz tworzenia operatu. Do uzupełnienia są 2 pola tytuł i rodzaj operatu. Formularz zatwierdź przyciskiem STWÓRZ OPERAT. 
 
 ![](/img/sidebar_operator_operats.png)
 
@@ -76,11 +76,11 @@ Po stworzeniu operatu rzeczoznawca ma dwie możliwości a mianowicie skorzystać
 
 ![](/img/operats_expanded_after_creation.png)
 
-Przycisk KOPIUJ nie kopiuje całości operatu, a tworzy on operat o takiej samej nazwie i informacjach o zleceniodawcy i zleceniu. Znajduje on zastosowanie gdy rzeczoznawca sporządza więcej niż jeden operat na potrzeby zlecenia. 
+Przycisk KOPIUJ nie kopiuje całości operatu, a tworzy on operat o takiej samej nazwie, informacjach o zleceniodawcy i zleceniu. Znajduje on zastosowanie gdy rzeczoznawca sporządza więcej niż jeden operat na potrzeby zlecenia. 
 
 #### 3.1. Wgrywanie gotowego operatu
 
-Wgrywanie operatu spoza platformy jest bardzo proste, przycisk wgraj operat otwiera okienko, które pozwala na przeglądanie plików znajdujących się na dysku. Wybierz plik z gotowym operatem. Po zatwierdzeniu pliku zostanie on automatycznie przesłany na platformę AOperat i będzie gotowy do podpisania.
+Wgrywanie operatu spoza platformy jest bardzo proste, przycisk WGRAJ OPERAT otwiera okienko, które pozwala na przeglądanie plików znajdujących się na dysku. Wybierz plik z gotowym operatem. Po zatwierdzeniu pliku zostanie on automatycznie przesłany na platformę AOperat i będzie gotowy do podpisania.
 
 ![](/img/operats_expanded_after_creation_upload.png)
 
@@ -219,8 +219,6 @@ Jeśli odbiorcą ma być tylko i wyłącznie zleceniodawca zaznacz opcję "Wysł
 Aby dodać innego odbiorcę wprowadź jego adres email w polu "Podaj adres email" i zatwierdź przyciskiem DODAJ ADRES EMAIL.
 
 ![](/img/operats_send_operat_window_add_email.png)
-
-
 
 ![](/img/operats_send_operat_window_add_email_added.png)
 
