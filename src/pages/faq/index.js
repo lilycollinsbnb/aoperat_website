@@ -17,7 +17,7 @@ export default function FaqPage() {
 
                 <div style={{marginBottom:"10px"}}>
                   <h2 className="is-size-5 has-text-weight-bold is-bold-light">2. Na czyje konto mam dokonać platności</h2>
-                  <p>Proszę dokonać platności na kotno rzeczoznawcy</p>
+                  <p>Proszę dokonać platności na konto rzeczoznawcy.</p>
                 </div>
 
               </div>
