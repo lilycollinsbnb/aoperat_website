@@ -5,7 +5,7 @@ date: 2022-08-24T08:40:06.727Z
 description: Ruszyła strona Techradar serwisu AOperat, gdzie opisane są
   wszystkie technologie, które wykorzystujemy do tworzenia i rozwijania
   platformy. W tym artykule opowiemy jak została stworzona.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/techradar.png
 tags:
   - aoperat
