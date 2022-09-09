@@ -28,12 +28,14 @@ export default function CareerPage () {
         <section className="section section--gradient">
         <div className="container">
           <div className="columns">
-              <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Kariera</h2>
-                <div className="column is-10 is-offset-1">
-                    <ul style={{listStyleType: "disc"}}>
-                        {careers.map(item => listItem(...item))}
-                    </ul>
+            <div className="column is-10 is-offset-1">
+                <div className="section">
+                    <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Kariera</h2>
+                    <div className="column is-10 is-offset-1">
+                        <ul style={{listStyleType: "disc"}}>
+                            {careers.map(item => listItem(...item))}
+                        </ul>
+                    </div>
                 </div>
             </div>
           </div>
