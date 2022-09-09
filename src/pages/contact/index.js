@@ -40,9 +40,9 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Kontakt</h1>
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Kontakt</h2>
               <p>Pełna nazwa firmy: AOperat Prosta Spółka Akcyjna</p>
-              <p>Adres: Miejsce: ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola</p>
+              <p>Adres: ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola</p>
               <ContactForm/>
             </div>
           </div>
