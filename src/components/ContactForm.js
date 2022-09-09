@@ -10,7 +10,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <h1>Napisz do nas</h1>
+      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Napisz do nas</h2>
       <form onSubmit={handleSubmit}>
         <div className="field">
           <label className="label" htmlFor={"name"}>
