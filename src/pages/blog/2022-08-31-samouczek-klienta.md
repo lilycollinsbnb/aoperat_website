@@ -2,12 +2,11 @@
 templateKey: blog-post
 title: Samouczek klienta
 date: 2022-08-31T10:44:14.907Z
-description: Platforma AOperat pozwala klientom szybko i wygodnie uzyskać operat
-  szacunkowy nieruchomości. Jako klient masz możliwość wystawić zlecenie na
-  stworzenie operatu szacunkowego. Rzeczoznawcy zainteresowani wykonaniem
-  zlecenia będą składać Ci oferty. Takie podejście pozwala na znalezienie
-  atrakcyjnej oferty spełniającej Twoje oczekiwania. W tym artykule pokażemy jak
-  to wygląda w praktyce.
+description: >-
+  Platforma AOperat służy do szybkiego i wygodnego tworzenia operatów
+  szacunkowych nieruchomości.
+
+  Będąc klientem masz możliwość zlecenia stworzenia operatu szacunkowego. Rzeczoznawcy zainteresowani wykonaniem usługi złożą swoje oferty. To podejście pozwala na znalezienie najlepszej oferty spełniającej Twoje oczekiwania. Pokażemy jak to wygląda w praktyce
 featuredpost: true
 featuredimage: /img/aoperat_logo.png
 tags:
@@ -17,31 +16,31 @@ tags:
 ---
 ### Jak przebiega proces realizacji zlecenia?
 
-Po złożeniu zlecenia przez klienta, każdy rzeczoznawca korzystający z platformy ma możliwość złożenia oferty sporządzenia operatu podając cenę i czas potrzebny na wykonanie zlecenia. Klient wybiera najbardziej odpowiadającą mu ofertę i dokonuje płatności. Po zaksięgowaniu płatności wybrany rzeczoznawca przystępuje do realizacji zlecenia. Po wykonaniu zlecenia gotowy operat w formie pliku pdf podpisanego cyfrowo certyfikatem rzeczoznawcy zostaje przesłany do klienta drogą mailową.
+Każdy rzeczoznawca korzystający z platformy ma możliwość złożenia oferty wykonania operatu, podając cenę i czas potrzebny na wykonanie zlecenia, umieszczonego na giełdzie zleceń przez klienta. Klient wybiera odpowiadającą mu ofertę i dokonuje płatności. Po jej zaksięgowaniu, rzeczoznawca przystępuje do realizacji zlecenia. Gotowy operat w formie pliku pdf, podpisany cyfrowo certyfikatem rzeczoznawcy, zostaje przesłany do klienta drogą mailową.
 
 ### Co możesz zyskać korzystając z naszej platformy?
 
-Korzystanie z giełdy zleceń oszczędzi Twój czas, który musiałbyś poświęcić na szukanie rzeczoznawcy chętnego wykonać operat. Będziesz mieć możliwość przebierać w ofertach, które przysyłać Ci będą rzeczoznawcy z całej Polski. Nie tylko przyspieszy to znalezienie rzeczoznawcy chętnego wykonać operat, ale również jak wcześniej wspominaliśmy zwiększy szansę realizacji zlecenia po atrakcyjnej cenie.
+Korzystanie z giełdy zleceń oszczędzi Twój czas, który musiałbyś poświęcić na szukanie rzeczoznawcy. Będziesz mieć możliwość przebierania w ofertach, które przysyłać Ci będą eksperci z całej Polski. To, nie tylko przyspieszy znalezienie rzeczoznawcy chętnego wykonać operat, ale zwiększy szansę realizacji zlecenia po atrakcyjnej cenie.
 
 ### Jak korzystać z giełdy zleceń?
 
-Zarejestruj i zaloguj się do platformy AOperat. W menu bocznym znajdującym się po lewej wybierz pozycję GIEŁDA ZLECEŃ. Jako, że jesteś nowym użytkownikiem to Twoja giełda zleceń będzie pusta, ponieważ klienci widzą tylko swoje zlecenia.
+Zarejestruj i zaloguj się do platformy AOperat. W menu bocznym, znajdującym się po lewej stronie ekranu, wybierz pozycję GIEŁDA ZLECEŃ. Ponieważ jesteś nowym użytkownikiem, Twoja giełda zleceń będzie pusta. Klienci widzą tylko swoje zlecenia.
 
 ![](/img/sidebar_client_market.png)
 
 ![](/img/market_client.png)
 
-Aby stworzyć zlecenie kliknij przycisk NOWE ZLECENIE. W formularzu należy sporządzić opis zlecenia i wprowadzić następujące dane: tytuł, kod pocztowy, adres, co jest przedmiotem wyceny (np. działka rolna), zakres wyceny (np. na potrzeby sprzedaży), nr księgi wieczystej oraz identyfikator (np. numer nieruchomości). Dodatkowo możesz zażądać, aby rzeczoznawca wykonujący operat był wpisany do bazy rzeczoznawców Związku Banków Polskich i/lub skorzystał z generatora operatów platformy AOperat.
+Aby stworzyć zlecenie - kliknij przycisk NOWE ZLECENIE. W formularzu należy sporządzić opis zlecenia i wprowadzić następujące dane: tytuł, kod pocztowy, adres, przedmiot wyceny (np. działka rolna), zakres wyceny (np. na potrzeby sprzedaży), nr księgi wieczystej oraz identyfikator (np. numer nieruchomości). Możesz także zażądać, by rzeczoznawca wykonujący operat był wpisany do bazy rzeczoznawców Związku Banków Polskich i/lub skorzystał z generatora operatów platformy AOperat.
 
 ![](/img/market_client_create_order.png)
 
 ![](/img/market_client_create_order_expanded.png)
 
-Zatwierdź wypełniony formularz przyciskiem DODAJ. Po chwili Twoje zlecenie powinno pojawić się na giełdzie. Nie ma możliwości edycji zlecenia, jeśli są w nim jakieś błędy usuń je i stwórz nowe zlecenie.
+Zatwierdź wypełniony formularz przyciskiem DODAJ. Po chwili - Twoje zlecenie powinno pojawić się na giełdzie. Nie ma możliwości edycji zlecenia, jeśli są w nim jakieś błędy - usuń je i stwórz nowe zlecenie.
 
 ![](/img/market_client_create_order_expanded_confirm.png)
 
-Po kliknięciu na zlecenie powinny pokazać się dodatkowe opcje takie jak DANE ZLECENIA, WYSŁANE OFERTY i USUŃ ZLECENIE. 
+Po kliknięciu na zlecenie, powinny pokazać się dodatkowe opcje takie jak DANE ZLECENIA, WYSŁANE OFERTY i USUŃ ZLECENIE. 
 
 ![](/img/market_client_expanded_row.png)
 
