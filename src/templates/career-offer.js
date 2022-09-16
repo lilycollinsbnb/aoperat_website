@@ -19,16 +19,20 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
                         <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                             {title}
                         </h2>
-                        <div className="columns is-multiline">
-                          <div className="column is-4">
-                            <h2 className="is-size-5 has-text-weight-bold">Rodzaj umowy:</h2>
-                            <p>{typeOfContract && typeOfContract.join(separator)}</p>
+                        { typeOfContract && vacancy &&
+                          <div>
+                            <div className="columns is-multiline">
+                              <div className="column is-4">
+                                <h2 className="is-size-5 has-text-weight-bold">Rodzaj umowy:</h2>
+                                <p>{typeOfContract.join(separator)}</p>
+                              </div>
+                              <div className="column is-4">
+                                <h2 className="is-size-5 has-text-weight-bold">Rodzaj etatu:</h2>
+                                <p>{vacancy.join(separator)}</p>
+                              </div>
+                            </div>
                           </div>
-                          <div className="column is-4">
-                            <h2 className="is-size-5 has-text-weight-bold">Rodzaj etatu:</h2>
-                            <p>{vacancy && vacancy.join(separator)}</p>
-                          </div>
-                        </div>
+                        }
                     </div>
                     { responsibilities && 
                       <div className="section">
