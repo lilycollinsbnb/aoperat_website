@@ -32,6 +32,20 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
+  
+  - name: "career"
+    label: "Career"
+    folder: "src/pages/career"
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "career-offer",
+      }
+    - { label: "Title", name: "title", widget: "string" }
 
   - name: "pages"
     label: "Pages"
