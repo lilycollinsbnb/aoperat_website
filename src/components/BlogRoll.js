@@ -97,11 +97,11 @@ export default function BlogRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
+                        width: 200
+                        height: 160
                         quality: 100
-                        layout: CONSTRAINED
+                        transformOptions: {fit: FILL}
                       )
-
                     }
                   }
                 }
