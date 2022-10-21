@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo.svg";
+import logoHor from "../img/logo-hor.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -38,10 +38,10 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <div className="container is-fullhd mrb-navbar-container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="AOperat" style={{ width: "88px" }} />
+              <img src={logoHor} alt="AOperat" style={{ width: "100px" }} className="mrb-logo" />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -62,22 +62,22 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item is-size-6" to="/about">
                 O Nas
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item is-size-6" to="/blog">
                 Aktualności
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item is-size-6" to="/contact">
                 Kontakt
               </Link>
-              <Link className="navbar-item" to="/career">
+              <Link className="navbar-item is-size-6" to="/career">
                 Kariera
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
               <a
-                className="navbar-item"
+                className="button mrb-button mrb-button-light"
                 href="https://panel2.aoperat.pl/start"
                 target="_blank"
                 rel="noopener noreferrer"

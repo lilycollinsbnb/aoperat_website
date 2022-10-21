@@ -1,0 +1,279 @@
+// Colors
+$primary-green: #4C9C62
+$secondary-black: #212326
+
+// Typography
+h1,h2,h3
+  line-height: 1.3
+
+// Helpers
+.is-color-primary-green
+  color: $primary-green !important
+.is-color-secondary-dark
+  color: $secondary-black !important
+.is-color-white
+  color: white
+.is-background-primary-green
+  background-color: $primary-green
+.is-background-secondary-dark
+  background-color: $secondary-black !important
+.is-max-width-1
+  max-width: 500px
+.is-max-width-2
+  max-width: 300px
+
+// Containers / Wrappers
+.mrb-container
+  position: relative
+  margin: 2rem auto 3rem auto
+  padding: 0 1rem
+  overflow: hidden
+.mrb-columns-wrapper
+  margin-top: .25rem
+  margin-bottom: .5rem
+.mrb-footer-container
+  padding: 0 1rem 1rem 1rem
+  .columns
+    width: 100%
+
+// Buttons
+.mrb-button
+  padding: 1rem 1.7rem 1rem 1.7rem !important
+  height: 3rem
+  font-size: 1rem
+  border-radius: 0
+  transition: all .2s ease-in-out
+
+.mrb-button-light
+  color: white
+  background-color: $primary-green
+  border-color: $primary-green
+  &:hover
+    color: $secondary-black
+    background-color: transparent
+
+.mrb-button-dark
+  color: white
+  background-color: $secondary-black
+  border-color: $secondary-black
+  &:hover
+    color: $secondary-black
+    background-color: transparent
+
+.mrb-button-link
+  padding: 0 !important
+  height: unset
+  text-decoration: underline
+  border: none
+
+// Forms
+.mrb-label-hidden
+  height: 5px
+  text-indent: -10000px
+input[type=text], input[type=email], input[type=textarea]
+  border: none
+  border-bottom: 1px solid $secondary-black
+  border-radius: 0
+  box-shadow: none
+  transition: all .2s ease-in-out
+  &:focus-visible, &:focus, &:active
+    outline: none
+    border-color: $primary-green
+    box-shadow: none
+  &::placeholder
+    color: $secondary-black
+    
+
+// Elements
+.mrb-label
+  display: block
+  margin-bottom: .5rem
+  font-size: 1.1rem
+.navbar-item
+  &:hover
+    color: $primary-green !important
+.mrb-menu
+  .menu-list
+    margin-top: .25rem
+    .navbar-item
+      padding: .3rem 0
+      &:hover
+        color: white !important
+        background-color: transparent
+        opacity: .7
+.mrb-socials
+  margin-top: .5rem
+  display: flex
+  gap: .75rem
+.mrb-faq
+  margin-top: 3rem
+  width: 100%
+  .mrb-faq-question 
+    width: 100%
+  .mrb-faq-question-button
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: .75rem
+    border: 1px solid $primary-green
+    background-color: transparent
+    cursor: pointer
+    &::after 
+      content: url('../img/icons/ep_arrow-down.svg')
+      margin-right: 17px
+      transform: rotate(90deg)
+    &:hover 
+      color: $secondary-black
+  .font-weight-bold
+    &::after
+      transform: rotate(0deg)
+      transform-origin: center
+  .mrb-faq-desc
+    padding-left: .5rem
+    padding-right: 17px
+    margin-top: .5rem
+    margin-bottom: .5rem
+    max-height: 0
+    overflow: hidden
+  .show-description
+    margin-top: 1.5rem
+    margin-bottom: 2rem
+    max-height: 100%
+
+
+
+// Box - component
+.mrb-box
+  padding: 2.5rem
+  box-sizing: border-box
+.mrb-scroll-arrow
+  display: block
+  margin: 0 auto 1rem auto
+
+// Single Post && Carrer Single Post
+.mrb-blog-container, .mrb-carrer-container
+  .mrb-blog-thumb, .mrb-carrer-thumb
+    width: 100%
+    height: 100%
+    max-height: 450px
+    object-fit: cover
+    object-position: center
+  h1,h2,h3
+    color: $primary-green
+  h2,h3
+    margin-top: 1.8rem
+  a
+    color: $secondary-black
+    text-decoration: underline
+    font-weight: 600
+  .no-margin-top
+    margin-top: 0 !important
+.mrb-carrer-container
+  ul
+    padding-left: .5rem
+
+// CareerOfferList - Component
+.mrb-carrer-list
+  margin-top: 1.5rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 1rem 3rem
+  li 
+    width: 260px
+    a
+      color: $secondary-black
+      font-weight: 600
+
+@media (min-width: 600px)
+  // Containers
+  .mrb-container
+    margin: 1rem auto 3rem auto
+    padding: 0 2rem
+    overflow: hidden
+  // Box - component
+  .mrb-box
+    padding: 3rem 2rem
+
+
+@media (min-width: 750px) 
+  // Containers
+  .mrb-container
+    margin: 2rem auto 3rem auto
+  .mrb-columns-wrapper
+    margin-top: .75rem
+  // Elements
+  .mrb-label
+    font-size: 1.25rem
+  .mrb-faq
+    .mrb-faq-question-button
+      padding: 1.5rem
+    .mrb-faq-desc
+      padding-left: 1.5rem
+  // Box - component
+  .mrb-box
+    .columns
+      height: 300px
+      p
+        padding-left: 2rem
+    .mrb-scroll-arrow
+      position: absolute
+      left: 50%
+      bottom: 40px
+      transform: translateX(-50%)
+
+@media (min-width: 1023px)
+  // Containers
+  .mrb-container
+    margin: 2rem auto 4rem auto
+  .mrb-navbar-container
+    padding: .75rem 1.5rem 0rem 1.5rem
+    .navbar-brand
+      flex: 33%
+    .navbar-menu
+      flex: 67%
+      .navbar-start
+        margin: 0 auto
+        justify-content: center
+        gap: 14px
+      .navbar-start, .navbar-end
+        flex: 50%
+        align-items: center
+  .mrb-columns-wrapper
+    margin-top: 1.75rem
+  .mrb-footer-container
+    padding: 3rem 2rem 6rem 2rem
+  // Elements
+  .mrb-logo
+    width: 120px !important
+    max-height: unset !important
+  .mrb-menu
+    .menu-list
+      margin-top: 1.25rem
+  .mrb-socials
+    margin-top: 1.25rem
+  // Box - component
+  .mrb-box
+    padding: 5rem !important
+    .mrb-scroll-arrow
+      bottom: 4.5rem
+  // CareerOfferList - Component
+  .mrb-carrer-list
+    margin-top: 3rem
+    justify-content: space-between
+    gap: 4rem 2rem
+    a
+      transition: all .2s ease-in-out 
+      &:hover
+        opacity: .75
+
+@media (min-width: 1380px)
+  // Elements
+  .mrb-logo
+    width: 160px !important
+  // Containers
+  .mrb-container
+    margin: 4rem auto 7rem auto
+    padding: 0
+  .mrb-navbar-container
+    padding: 1rem .75rem 0rem .75rem

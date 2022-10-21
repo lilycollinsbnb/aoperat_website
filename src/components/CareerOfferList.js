@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
+import carrerThumb from "../img/carrer-thumb.png";
+
 class CareerOfferListTemplate extends React.Component {
   render() {
     function listItem (name, redirectTo) {
@@ -9,7 +11,12 @@ class CareerOfferListTemplate extends React.Component {
       return (
           <li style={liStyle}>
               <Link to={redirectTo}>
-                  {name}
+                <img
+                  src={carrerThumb}
+                  alt="CMS Alt"
+                  style={{ width: "260px", height: "255px" }}
+                />
+                {name}
               </Link>
           </li>
       )
@@ -20,7 +27,7 @@ class CareerOfferListTemplate extends React.Component {
     const { data } = this.props
     const { edges: careers } = data.allMarkdownRemark
     return (
-      <ul style={{listStyleType: "disc"}}>
+      <ul className="mrb-carrer-list">
         {careers.map(({ node: career }) => listItem(career.frontmatter.title, career.fields.slug))}
       </ul>
     )

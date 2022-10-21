@@ -10,10 +10,9 @@ export default function ContactForm() {
 
   return (
     <div>
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Napisz do nas</h2>
       <form onSubmit={handleSubmit}>
-        <div className="field">
-          <label className="label" htmlFor={"name"}>
+        <div className="field mt-3">
+          <label className="label mrb-label-hidden" htmlFor={"name"}>
             Imię i nazwisko
           </label>
           <div className="control">
@@ -22,13 +21,14 @@ export default function ContactForm() {
               type={"text"}
               name={"name"}
               id={"name"}
+              placeholder={"Imię i nazwisko"}
               required={true}
             />
           </div>
         </div>
 
         <div className="field">
-          <label className="label" htmlFor={"email"}>
+          <label className="label mrb-label-hidden" htmlFor={"email"}>
             Adres email
           </label>
           <div className="control">
@@ -37,13 +37,14 @@ export default function ContactForm() {
               type={"email"}
               name={"email"}
               id={"email"}
+              placeholder={"Adres email"}
               required={true}
             />
           </div>
         </div>
 
         <div className="field">
-          <label className="label" htmlFor={"subject"}>
+          <label className="label mrb-label-hidden" htmlFor={"subject"}>
             Temat
           </label>
           <div className="control">
@@ -52,13 +53,14 @@ export default function ContactForm() {
               type={"text"}
               name={"subject"}
               id={"subject"}
+              placeholder={"Temat"}
               required={true}
             />
           </div>
         </div>
 
         <div className="field">
-          <label className="label" htmlFor={"message"}>
+          <label className="label mrb-label-hidden" htmlFor={"message"}>
             Treść wiadomości
           </label>
           <div className="control">
@@ -67,15 +69,16 @@ export default function ContactForm() {
               type={"textarea"}
               name={"message"}
               id={"message"}
+              placeholder={"Treść wiadomości"}
               required={true}
             />
           </div>
         </div>
 
-        <div className="field">
+        <div className="field mt-6">
           <button
             disabled={state.submitting}
-            className="button is-link"
+            className="button is-fullwidth mrb-button mrb-button-light"
             type="submit"
           >
             Wyślij

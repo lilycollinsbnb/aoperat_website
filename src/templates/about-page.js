@@ -4,70 +4,18 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
+import ImageRightSection from "../components/ImageRightSection";
+import ClientsSection from "../components/ClientsSection";
+
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-              <div className="container">
-               <h2 className="title is-size-4 is-bold-light">Naszymi klientami są:</h2>
-                <div className="columns is-multiline">
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Komornicy</h2>
-                    <p>Dla licytacji</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Banki</h2>
-                    <p>Na kredyt hipoteczny</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Gminy</h2>
-                    <p>Na określenie opłat z dzierżawy wieczystej</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Deweloperzy</h2>
-                    <p>Do uzyskania kredytowania</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Spółki</h2>
-                    <p>Na wniesienie nieruchomości aportem</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Spadkobiercy</h2>
-                    <p>Na określenie wysokości spadku</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Ubezpieczyciele</h2>
-                    <p>Na polisę ubezpieczeniową</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Sądy</h2>
-                    <p>W postępowaniu sądowym</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">GDDKIA</h2>
-                    <p>Inwestycje liniowe pod drogi</p>
-                  </div>
-                  <div className="column is-4">
-                    <h2 className="is-size-5 has-text-weight-bold">Urząd Skarbowy</h2>
-                    <p>Kontrola wysokości podatków</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div>
+      <ImageRightSection TitleTag={"h1"} title={"Pomagamy okreslić wartość nieruchomości, w sposób szybki i dokładny."} subheading={"W naszej codziennej pracy zauważyliśmy, że klienci za długo czekają na wykonanie operatu szacunkowego. Operaty między rzeczoznawcami są różnej jakości, nie ma standardów szablonu dokumentu. Dlatego stworzyliśmy platformę do szybkiego i dokładnego generowania operatów szacunkowych, dzięki której możesz jak najszybciej działać."} />
+      <ClientsSection />
+    </div>
   );
 };
 
