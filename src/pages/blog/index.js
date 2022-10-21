@@ -7,27 +7,13 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-              backgroundColor: "#f40",
-              color: "white",
-              padding: "1rem",
-            }}
-          >
-            Aktualności
-          </h1>
-        </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
+        <section>
+          <div className="container is-fullhd mrb-container">
+            <span className="has-text-weight-semibold has-text-centered mrb-label">BĄDŹ Z NAMI NA BIEŻĄCO</span>
+            <h1 className="has-text-weight-bold has-text-centered is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-color-primary-green">
+              Aktualności
+            </h1>
+            <div className="pt-3">
               <BlogRoll />
             </div>
           </div>

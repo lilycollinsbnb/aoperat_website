@@ -3,21 +3,19 @@ import CareerOfferList from '../../components/CareerOfferList';
 import Layout from "../../components/Layout";
 
 export default function CareerPage () {
-    return (<Layout>
-        <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-                <div className="section">
-                    <h2 className="title is-size-3 has-text-weight-bold is-bold-light">Kariera</h2>
-                    <div className="column is-10 is-offset-1">
-                        <CareerOfferList />
-                    </div>
-                </div>
+    return (
+      <Layout>
+        <section>
+          <div className="container is-max-desktop mrb-container">
+            <span className="has-text-weight-semibold has-text-centered mrb-label">DOŁĄCZ DO NAS</span>
+            <h1 className="has-text-weight-bold has-text-centered is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-color-primary-green">
+              Kariera
+            </h1>
+            <div className="pt-3">
+              <CareerOfferList />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </Layout>
     )
 }

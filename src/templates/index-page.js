@@ -5,7 +5,9 @@ import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
+import HeroSection from "../components/HeroSection";
+import Box from "../components/Box";
+import ImageRightSection from "../components/ImageRightSection";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -18,46 +20,23 @@ export const IndexPageTemplate = ({
   intro,
 }) => {
   const heroImage = getImage(image) || image;
-
+  
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
-                    </div>
-                  </div>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Aktualności
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Czytaj więcej
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <HeroSection img={heroImage} title={title} subheading={subheading} />
+      <Box title={mainpitch.title} subheading={mainpitch.description} />
+      <ImageRightSection TitleTag={"h2"} img={heroImage} title={heading} subheading={description} />
+      <section>
+        <div className="container is-fullhd mrb-container">
+          <span className="has-text-weight-semibold mrb-label">AOPERAT</span>
+          <h3 className="has-text-weight-semibold is-size-4-mobile is-size-3-tablet is-size-2-widescreen is-color-primary-green">
+            Aktualności
+          </h3>
+          <BlogRoll />
+          <div className="buttons is-centered">
+            <Link className="button mrb-button mrb-button-light" to="/blog">
+              Czytaj więcej
+            </Link>
           </div>
         </div>
       </section>

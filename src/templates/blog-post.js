@@ -6,6 +6,8 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
+import postThumb from "../img/blog-post-thumb.png"
+
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
   content,
@@ -20,9 +22,16 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container content">
+      <div className="container content mrb-blog-container">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-8 is-offset-2">
+            <img
+              src={postThumb}
+              alt="alt z CMSa"
+              width={"400px"}
+              height={"400px"}
+              className="mrb-blog-thumb"
+            />
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>

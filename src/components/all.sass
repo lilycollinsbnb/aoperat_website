@@ -115,12 +115,20 @@ $menu-label-color: $white-ter
 // blog roll
 .blog-list-item.is-featured
   background-color: #d6400033
-.blog-list-item header
-  display: flex
-  margin-bottom: 1em
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%
-  margin: 0 1.5em 0 0
+.blog-list-item
+  &:hover
+    .featured-thumbnail
+      opacity: .85
+  header
+    display: flex
+    flex-direction: column
+    margin-bottom: 1em
+  .featured-thumbnail
+    max-width: 100% !important
+    flex-basis: 100%
+    transition: all .2s ease-in-out
+    .gatsby-image-wrapper-constrained
+      width: 100%
 
 
 @import "~bulma"
