@@ -16,4 +16,5 @@ description: W naszej codziennej pracy zauważyliśmy, że klienci za długo cze
   jakości, nie ma standardów szablonu dokumentu. Dlatego stworzyliśmy platformę
   do szybkiego i dokładnego generowania operatów szacunkowych, dzięki której
   możesz jak najszybciej działać.
+carouselItems: [{imagePath: "someurl", alt: "alt2", text: "asd"},{imagePath: "someurl", alt: "alt1", text: "qwe"}]
 ---

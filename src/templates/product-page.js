@@ -3,31 +3,31 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import ImageRightSection from "../components/ImageRightSection";
 
 // eslint-disable-next-line
-export const ProductPageTemplate = ({ title, content, contentComponent }) => {
+export const ProductPageTemplate = ({ title, subheading, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
+    <div>
+      <ImageRightSection 
+      TitleTag={"h1"} 
+      title={title} 
+      subheading={subheading} 
+      />
       <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
+        <PageContent className="content" content={content} />
       </div>
-    </section>
+    </div>
+    
+    
   );
 };
 
 ProductPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -40,6 +40,7 @@ const ProductPage = ({ data }) => {
       <ProductPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        subheading={post.frontmatter.subheading}
         content={post.html}
       />
     </Layout>
@@ -58,6 +59,7 @@ export const productPageQuery = graphql`
       html
       frontmatter {
         title
+        subheading
       }
     }
   }

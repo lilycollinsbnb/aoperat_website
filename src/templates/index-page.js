@@ -8,6 +8,7 @@ import BlogRoll from "../components/BlogRoll";
 import HeroSection from "../components/HeroSection";
 import Box from "../components/Box";
 import ImageRightSection from "../components/ImageRightSection";
+import MainPageCarousel from "../components/MainPageCarousel";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -17,13 +18,14 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro,
+  carouselItems
 }) => {
   const heroImage = getImage(image) || image;
   
   return (
     <div>
       <HeroSection img={heroImage} title={title} subheading={subheading} />
+      <MainPageCarousel items={carouselItems} />
       <Box title={mainpitch.title} subheading={mainpitch.description} />
       <ImageRightSection TitleTag={"h2"} img={heroImage} title={heading} subheading={description} />
       <section>
@@ -51,7 +53,11 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.object
+  carouselItems: PropTypes.arrayOf(PropTypes.shape({
+    imagePath: PropTypes.string,
+    alt: PropTypes.string,
+    text: PropTypes.string
+  }))
 };
 
 const IndexPage = ({ data }) => {
@@ -66,7 +72,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
+        carouselItems={frontmatter.carouselItems}
       />
     </Layout>
   );
@@ -99,6 +105,11 @@ export const pageQuery = graphql`
           description
         }
         description
+        carouselItems {
+          imagePath
+          alt
+          text
+        }
       }
     }
   }
