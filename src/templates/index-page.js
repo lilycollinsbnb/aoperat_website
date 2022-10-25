@@ -99,10 +99,6 @@ export const pageQuery = graphql`
           description
         }
         description
-        intro {
-          heading
-          description
-        }
       }
     }
   }
