@@ -2,10 +2,10 @@
 templateKey: blog-post
 title: Techradar
 date: 2022-08-24T08:40:06.727Z
-description: Techradar  jest serwisem AOperatu, gdzie opisane są wszystkie
-  technologie, które wykorzystujemy do tworzenia i rozwijania platformy. W tym
-  artykule opowiemy jak została stworzona.
-featuredpost: false
+description: Techradar  jest stroną, gdzie opisane są wszystkie technologie,
+  które wykorzystujemy do tworzenia i rozwijania platformy. W tym artykule
+  opowiemy jak została stworzona.
+featuredpost: true
 featuredimage: /img/techradar.png
 tags:
   - aoperat
