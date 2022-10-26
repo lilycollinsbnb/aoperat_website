@@ -6,7 +6,7 @@ description: "Jeśli po zapoznaniu się z możliwościami jakie daje Ci AOperat,
   jesteś zainteresowany korzystaniem z naszej platformy, to zachęcamy do
   przeczytania poniższego artykułu, w którym wyjaśniamy krok po kroku, w jaki
   sposób zacząć przygodę z naszą platformą. "
-featuredpost: true
+featuredpost: false
 featuredimage: /img/projekt-bez-tytułu-2-.jpg
 ---
 
