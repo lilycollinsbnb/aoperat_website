@@ -1,10 +1,11 @@
 import { useForm, ValidationError } from "@formspree/react";
-import { GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3";
+
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import * as React from "react";
 
 export default function ContactForm() {
   const { executeRecaptcha } = useGoogleReCaptcha();
-  const [state, handleSubmit] = useForm("xleogrvq",{
+  const [state, handleSubmit] = useForm("xleogrvq", {
     data: { "g-recaptcha-response": executeRecaptcha }
   });
   
@@ -14,7 +15,6 @@ export default function ContactForm() {
 
   return (
     <div>
-      <GoogleReCaptchaProvider reCaptchaKey="6LfDkLoiAAAAAABFPw6VdtrulRrdMCCetoTu5W11">
         <form onSubmit={handleSubmit}>
           <div className="field mt-3">
             <label className="label mrb-label-hidden" htmlFor={"name"}>
@@ -92,7 +92,6 @@ export default function ContactForm() {
           {state.succeeded && <p>Wiadomość została wysłana</p>}
           <ValidationError errors={state.errors} />
         </form>
-      </GoogleReCaptchaProvider>
     </div>
   );
 }
