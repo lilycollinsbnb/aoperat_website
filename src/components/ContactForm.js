@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import * as React from "react";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("myykjpje");
+  const [state, handleSubmit] = useForm("xleogrvq");
 
   if (state.succeeded) {
     return <h4 style={{color:"green"}}>Wiadomość została wysłana!</h4>;
