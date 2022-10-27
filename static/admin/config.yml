@@ -46,11 +46,46 @@ collections:
           default: "career-offer",
       }
     - { label: "Title", name: "title", widget: "string" }
-    - { label: "Vacancy", name: "vacancy", widget: "list" }
-    - { label: "Type of contract", name: "typeOfContract", widget: "list" }
-    - { label: "Responsibilities", name: "responsibilities", widget: "list" }
-    - { label: "Requirements", name: "requirements", widget: "list" }
-    - { label: "What we offer", name: "whatWeOffer", widget: "list" }
+    - { 
+        label: "Vacancies", 
+        name: "vacancies", 
+        widget: "list",
+        allow_add: true, 
+        label_singular: "vacancy", 
+        field: { label: Vacancy, name: vacancy, widget: string } 
+      }
+    - { 
+        label: "Types of contract", 
+        name: "typesOfContract", 
+        widget: "list", 
+        allow_add: true, 
+        label_singular: "contract", 
+        field: { label: Contract, name: contract, widget: string } 
+      }
+    - { 
+        label: "Responsibilities", 
+        name: "responsibilities", 
+        widget: "list",
+        allow_add: true, 
+        label_singular: "responsibility", 
+        field: { label: Responsibility, name: responsibility, widget: string }  
+      }
+    - { 
+        label: "Requirements", 
+        name: "requirements", 
+        widget: "list" ,
+        allow_add: true, 
+        label_singular: "requirement", 
+        field: { label: Requirement, name: requirement , widget: string } 
+      }
+    - { 
+        label: "What we offer", 
+        name: "whatWeOffer", 
+        widget: "list",
+        allow_add: true, 
+        label_singular: "offer", 
+        field: {label: Offer, name: offer, widget: string} 
+      }
 
   - name: "pages"
     label: "Pages"
@@ -91,81 +126,15 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
+          - { 
+              label: Carousel Items, 
+              name: carouselItems, 
+              widget: list,
+              allow_add: true, 
+              label_singular: "item", 
+              field: { label: Image, name: image, widget: image } 
             }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
+ 
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -178,6 +147,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
       - file: "src/pages/product/index.md"
         label: "Prodcut"
         name: "product"
@@ -188,5 +158,7 @@ collections:
               widget: "hidden",
               default: "product-page"
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "pageTitle", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Content Section Title", name: "contentSectionTitle", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }

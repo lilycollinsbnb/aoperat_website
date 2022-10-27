@@ -1,36 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
-
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
-import HeroSection from "../components/HeroSection";
-import Box from "../components/Box";
-import ImageRightSection from "../components/ImageRightSection";
 import MainPageCarousel from "../components/MainPageCarousel";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
   carouselItems
 }) => {
-  const heroImage = getImage(image) || image;
   
   return (
     <div>
-      <HeroSection img={heroImage} title={title} subheading={subheading} />
       <MainPageCarousel items={carouselItems} />
-      <Box title={mainpitch.title} subheading={mainpitch.description} />
-      <ImageRightSection TitleTag={"h2"} img={heroImage} title={heading} subheading={description} />
       <section>
         <div className="container is-fullhd mrb-container">
-          <span className="has-text-weight-semibold mrb-label">AOPERAT</span>
           <h3 className="has-text-weight-semibold is-size-4-mobile is-size-3-tablet is-size-2-widescreen is-color-primary-green">
             Aktualności
           </h3>
@@ -47,17 +31,7 @@ export const IndexPageTemplate = ({
 };
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  carouselItems: PropTypes.arrayOf(PropTypes.shape({
-    imagePath: PropTypes.string,
-    alt: PropTypes.string,
-    text: PropTypes.string
-  }))
+  carouselItems: PropTypes.array
 };
 
 const IndexPage = ({ data }) => {
@@ -66,12 +40,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         carouselItems={frontmatter.carouselItems}
       />
     </Layout>
@@ -92,23 +60,10 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
         carouselItems {
-          imagePath
-          alt
-          text
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH, aspectRatio: 2.5, transformOptions: {fit: FILL})
+          }
         }
       }
     }
