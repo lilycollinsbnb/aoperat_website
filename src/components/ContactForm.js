@@ -31,7 +31,7 @@ export default function ContactForm() {
         "g-recaptcha-response": token
     }
 
-    const resp = await window.fetch("https://formspree.io/f/xleogrvq", {
+    const resp = await window.fetch(`https://formspree.io/f/${process.env.GATSBY_FORMSPREE_FORM_ID}`, {
         method: "POST",
         headers: {
           "Content-Type": 'application/json'
