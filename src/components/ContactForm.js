@@ -1,18 +1,58 @@
-import { useForm, ValidationError } from "@formspree/react";
-
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import * as React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 export default function ContactForm() {
-  const { executeRecaptcha } = useGoogleReCaptcha();
-  const [state, handleSubmit] = useForm("xleogrvq", {
-    data: { "g-recaptcha-response": executeRecaptcha }
-  });
-  
-  if (state.succeeded) {
-    return <h4 style={{color:"green"}}>Wiadomość została wysłana!</h4>;
-  }
+  const [token, setToken] = useState("")
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const [success, setSuccess] = useState(false)
 
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  const handleReCaptchaVerify = useCallback(async () => {
+    if (!executeRecaptcha) {
+      console.log('Execute recaptcha not yet available');
+      return;
+    }
+
+    const newToken = await executeRecaptcha('submit');
+    setToken(newToken)
+  }, [executeRecaptcha]);
+
+  useEffect(() => {
+    handleReCaptchaVerify();
+  }, [handleReCaptchaVerify]);
+
+  function handleSubmit () {
+    setSuccess(false)
+    handleReCaptchaVerify()
+    .then(_ => {
+      const data = {
+        name: name, 
+        email: email, 
+        subject: subject, 
+        message: message,
+        "g-recaptcha-response": token
+      }
+      return window.fetch("https://formspree.io/f/xleogrvq", {
+        method: "POST",
+        headers: {
+          "Content-Type": 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+    }).then( resp => {
+      if (resp.status >= 200 && resp.status < 300){
+        setSuccess(true)
+      }
+      else {
+        setSuccess(false)
+      }
+    }).catch(err => { setSuccess(false)})
+  }
+  
+  
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -27,6 +67,7 @@ export default function ContactForm() {
                 name={"name"}
                 id={"name"}
                 placeholder={"Imię i nazwisko"}
+                onChange={e => setName(e.target.value) }
                 required={true}
               />
             </div>
@@ -43,6 +84,7 @@ export default function ContactForm() {
                 name={"email"}
                 id={"email"}
                 placeholder={"Adres email"}
+                onChange={e => setEmail(e.target.value) }
                 required={true}
               />
             </div>
@@ -59,6 +101,7 @@ export default function ContactForm() {
                 name={"subject"}
                 id={"subject"}
                 placeholder={"Temat"}
+                onChange={e => setSubject(e.target.value) }
                 required={true}
               />
             </div>
@@ -75,6 +118,7 @@ export default function ContactForm() {
                 name={"message"}
                 id={"message"}
                 placeholder={"Treść wiadomości"}
+                onChange={e => setMessage(e.target.value) }
                 required={true}
               />
             </div>
@@ -82,15 +126,12 @@ export default function ContactForm() {
 
           <div className="field mt-6">
             <button
-              disabled={state.submitting}
               className="button is-fullwidth mrb-button mrb-button-light"
               type="submit"
             >
               Wyślij
             </button>
           </div>
-          {state.succeeded && <p>Wiadomość została wysłana</p>}
-          <ValidationError errors={state.errors} />
         </form>
     </div>
   );
