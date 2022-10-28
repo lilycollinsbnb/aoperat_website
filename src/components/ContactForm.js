@@ -40,6 +40,10 @@ export default function ContactForm() {
       })
     setSuccess(resp.status >= 200 && resp.status < 300)
   }
+
+  useEffect(() => {
+    handleReCaptchaVerify();
+  }, [handleReCaptchaVerify]);
     
   return (
     <div>
