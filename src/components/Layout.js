@@ -6,12 +6,10 @@ import "./all.sass";
 import "./a_styles.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <GoogleReCaptchaProvider reCaptchaKey="6LfDkLoiAAAAAABFPw6VdtrulRrdMCCetoTu5W11">
     <div>
       <Helmet>
         <html lang="en" />
@@ -56,7 +54,6 @@ const TemplateWrapper = ({ children }) => {
       <div>{children}</div>
       <Footer />
     </div>
-    </GoogleReCaptchaProvider>
   );
 };
 
