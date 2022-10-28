@@ -20,35 +20,27 @@ export default function ContactForm() {
     setToken(newToken)
   }, [executeRecaptcha]);
 
-  function handleSubmit () {
+  const handleSubmit = async (event) => {
+    event.preventDefault()
     setSuccess(false)
-    handleReCaptchaVerify()
-    .then(_ => {
-      const data = {
+    await handleReCaptchaVerify()
+    const data = {
         name: name, 
         email: email, 
         subject: subject, 
         message: message,
         "g-recaptcha-response": token
-      }
-      return window.fetch("https://formspree.io/f/xleogrvq", {
+    }
+    const resp = window.fetch("https://formspree.io/f/xleogrvq", {
         method: "POST",
         headers: {
           "Content-Type": 'application/json'
         },
         body: JSON.stringify(data)
       })
-    }).then( resp => {
-      if (resp.status >= 200 && resp.status < 300){
-        setSuccess(true)
-      }
-      else {
-        setSuccess(false)
-      }
-    }).catch(err => { setSuccess(false)})
+      setSuccess(await resp.status )
   }
-  
-  
+    
   return (
     <div>
         <form onSubmit={handleSubmit}>
