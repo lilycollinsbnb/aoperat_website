@@ -2,7 +2,6 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import React, { useState, useEffect, useCallback } from "react";
 
 export default function ContactForm() {
-  const [token, setToken] = useState("")
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
@@ -12,18 +11,18 @@ export default function ContactForm() {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const handleReCaptchaVerify = useCallback(async () => {
     if (!executeRecaptcha) {
-      console.log('Execute recaptcha not yet available');
       return;
     }
+    const token = await executeRecaptcha('submit');
 
-    const newToken = await executeRecaptcha('submit');
-    setToken(newToken)
+    return token;
   }, [executeRecaptcha]);
 
   const handleSubmit = async (event) => {
     event.preventDefault()
     setSuccess(false)
-    await handleReCaptchaVerify()
+    const token = await handleReCaptchaVerify()
+
     const data = {
         name: name, 
         email: email, 
@@ -31,6 +30,7 @@ export default function ContactForm() {
         message: message,
         "g-recaptcha-response": token
     }
+
     const resp = await window.fetch("https://formspree.io/f/xleogrvq", {
         method: "POST",
         headers: {
@@ -41,7 +41,7 @@ export default function ContactForm() {
     setSuccess(resp.status >= 200 && resp.status < 300)
   }
 
-  useEffect(() => {
+  useEffect( () => {
     handleReCaptchaVerify();
   }, [handleReCaptchaVerify]);
     
