@@ -20,10 +20,6 @@ export default function ContactForm() {
     setToken(newToken)
   }, [executeRecaptcha]);
 
-  useEffect(() => {
-    handleReCaptchaVerify();
-  }, [handleReCaptchaVerify]);
-
   function handleSubmit () {
     setSuccess(false)
     handleReCaptchaVerify()
