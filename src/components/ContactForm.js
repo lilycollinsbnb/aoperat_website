@@ -131,6 +131,9 @@ export default function ContactForm() {
             >
               Wyślij
             </button>
+            { success && 
+              <p className="is-color-primary-green">Wiadomość została wysłana</p>
+            }
           </div>
         </form>
     </div>
