@@ -31,14 +31,14 @@ export default function ContactForm() {
         message: message,
         "g-recaptcha-response": token
     }
-    const resp = window.fetch("https://formspree.io/f/xleogrvq", {
+    const resp = await window.fetch("https://formspree.io/f/xleogrvq", {
         method: "POST",
         headers: {
           "Content-Type": 'application/json'
         },
         body: JSON.stringify(data)
       })
-      setSuccess(await resp.status )
+    setSuccess(resp.status >= 200 && resp.status < 300)
   }
     
   return (
