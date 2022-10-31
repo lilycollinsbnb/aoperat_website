@@ -6,7 +6,7 @@ description: >
   W poprzednim artykule wyjaśnialiśmy jak założyć konto rzeczoznawcy. W
   poniższym artykule omówimy giełdę zleceń, gdzie widoczne są zlecenia na wycenę
   nieruchomości innych użytkowników.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/projekt-bez-tytułu.png
 ---
 ## [](https://aoperat.pl/blog/2022-10-26-jak-za%C5%82o%C5%BCy%C4%87-konto-rzeczoznawcy/)Krok 1
