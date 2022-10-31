@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: "Jak założyć konto rzeczoznawcy? "
+title: "How to Part 1: Jak założyć konto rzeczoznawcy? "
 date: 2022-10-26T18:07:02.807Z
 description: "Jeśli po zapoznaniu się z możliwościami jakie daje Ci AOperat,
   jesteś zainteresowany korzystaniem z naszej platformy, to zachęcamy do
