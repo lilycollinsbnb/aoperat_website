@@ -6,10 +6,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
-    console.log(data.carouselItems)
     return (
       <IndexPageTemplate
-        carouselItems={data.carouselItems.map(x => getAsset(x))}
+        carouselItems={data.carouselItems.map(x => {return {image: getAsset(x.image), text: x.text}})}
       />
     )
   } else {

@@ -61,9 +61,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         carouselItems {
+          image {
             childImageSharp {
-              gatsbyImageData(quality: 100, layout: FULL_WIDTH, aspectRatio: 2.5, transformOptions: {fit: FILL})
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
           }
+          text
+          redirectTo
         }
       }
     }
