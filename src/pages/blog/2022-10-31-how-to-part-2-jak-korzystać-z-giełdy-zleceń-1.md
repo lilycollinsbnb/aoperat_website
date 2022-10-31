@@ -9,8 +9,6 @@ description: >
 featuredpost: true
 featuredimage: /img/projekt-bez-tytułu.png
 ---
-<https://aoperat.pl/blog/2022-10-26-jak-za%C5%82o%C5%BCy%C4%87-konto-rzeczoznawcy/>
-
 ## [](https://aoperat.pl/blog/2022-10-26-jak-za%C5%82o%C5%BCy%C4%87-konto-rzeczoznawcy/)Krok 1
 
 Po zalogowaniu na bocznym pasku zadań należy wybrać pozycję "GIEŁDA ZLECEŃ." Następnie wyświetli się lista zleceń od innych użytkowników. (zdjęcie)
