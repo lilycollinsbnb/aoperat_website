@@ -1,7 +1,7 @@
 ---
 templateKey: career-offer
 title: Prawnik (praktyki)
-vacancies: []
+workingTime: []
 responsibilities:
   - Śledzenie zmian w prawie nieruchomościowym
   - Sprawdzanie poprawności operatów szacunkowych

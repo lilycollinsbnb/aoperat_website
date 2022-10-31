@@ -10,7 +10,7 @@ const CareerOfferPreview = ({ entry, getAsset }) => {
       <CareerOfferTemplate
         title={data.title}
         typesOfContract={data.typesOfContract || [] }
-        vacancies={data.vacancies || [] }
+        workingTime={data.workingTime || [] }
         responsibilities={data.responsibilities || [] }
         requirements={data.requirements || [] }
         whatWeOffer={data.whatWeOffer || []}

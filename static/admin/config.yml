@@ -47,21 +47,19 @@ collections:
       }
     - { label: "Title", name: "title", widget: "string" }
     - { 
-        label: "Vacancies", 
-        name: "vacancies", 
-        widget: "list",
-        allow_add: true, 
-        label_singular: "vacancy", 
-        field: { label: Vacancy, name: vacancy, widget: string } 
-      }
-    - { 
         label: "Types of contract", 
         name: "typesOfContract", 
-        widget: "list", 
-        allow_add: true, 
-        label_singular: "contract", 
-        field: { label: Contract, name: contract, widget: string } 
+        widget: "select", 
+        options: ["umowa o pracę", "umowa o zlecenie", "umowa o dzieło", "kontrakt firma-firma", "praktyki"],
+        multiple: true
       }
+    - { 
+        label: "Working time", 
+        name: "workingTime", 
+        widget: "select",
+        options: ["pełny etat", "1/2 etatu", "1/4 etatu"],
+        multiple: true
+      }   
     - { 
         label: "Responsibilities", 
         name: "responsibilities", 

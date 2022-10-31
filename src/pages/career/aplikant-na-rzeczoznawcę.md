@@ -1,7 +1,7 @@
 ---
 templateKey: career-offer
 title: Aplikant na Rzeczoznawcę
-vacancies:
+workingTime:
   - pełny etat
   - 1/2 etatu
   - 1/4 etatu
