@@ -6,6 +6,7 @@ import ContactForm from "../../components/ContactForm";
 import contactImage from "../../img/contact.png"
 import contactIcon1 from "../../img/icons/contact-address.svg";
 import contactIcon2 from "../../img/icons/contact-company-name.svg";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 function encode(data) {
   return Object.keys(data)
@@ -41,6 +42,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.GATSBY_GOOGLE_RECAPTCHA_SITE_KEY}>
         <section>
           <div className="container is-fullhd mrb-container">
             <div className="columns is-variable is-8">
@@ -97,6 +99,7 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
+        </GoogleReCaptchaProvider>
       </Layout>
     );
   }
