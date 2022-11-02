@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 
 export default function FullWidthImage(props) {
   const {
     height = 400,
     img,
-    title,
-    subheading,
+    text,
+    redirectTo,
     imgPosition = "top left",
   } = props;
 
@@ -17,7 +18,6 @@ export default function FullWidthImage(props) {
         className="margin-top-0"
         style={{
           display: "grid",
-          alignItems: "center",
         }}
       >
         {img?.url ? (
@@ -39,13 +39,13 @@ export default function FullWidthImage(props) {
           />
         ) : (
           <GatsbyImage
-            image={img}
+            image={getImage(img)}
             objectFit={"cover"}
             objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              maxHeight: height,
+              height: height,
             }}
             layout="fullWidth"
             // You can optionally force an aspect ratio for the generated image
@@ -55,59 +55,32 @@ export default function FullWidthImage(props) {
             formats={["auto", "webp", "avif"]}
           />
         )}
-        {(title || subheading) && (
+        {(text) && (
           <div
+            className="carousel-content-grid-wrapper"
             style={{
               // By using the same grid area for both, they are stacked on top of each other
               gridArea: "1/1",
               position: "relative",
-              // This centers the other elements inside the hero component
-              placeItems: "center",
-              display: "grid",
             }}
           >
-            {/* Any content here will be centered in the component */}
-            {title && (
-              <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-                style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25em",
-                }}
-              >
-                {title}
-              </h1>
-            )}
-            {subheading && (
-              <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25rem",
-                  marginTop: "0.5rem",
-                }}
-              >
-                {subheading}
-              </h3>
-            )}
+            <div className="carousel-text-area">
+              <div style={{alignSelf: "start"}}>
+                <h1 className="is-color-white has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">{text}</h1>
+              </div>
+              <div style={{alignSelf: "end", marginBottom: "7px"}}>
+                <a href={redirectTo} className="has-text-weight-bold button mrb-button mrb-button-dark">Dowiedz się więcej</a>
+              </div>
+            </div>
           </div>
         )}
-      </div>
+        </div>
     </React.Fragment>
   );
 }
 
 FullWidthImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
+  text: PropTypes.string,
   height: PropTypes.number,
-  subheading: PropTypes.string,
 };

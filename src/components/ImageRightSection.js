@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 
 export default function ImageRightSection(props) {
   const {
@@ -17,7 +18,6 @@ export default function ImageRightSection(props) {
           <div className="columns is-variable is-8">
             {(title || subheading) && (
               <div className="column is-flex is-flex-direction-column is-justify-content-center">
-                <span className="has-text-weight-semibold mrb-label">AOPERAT</span>
                 <TitleTag className="has-text-weight-semibold is-size-4-mobile is-size-3-tablet is-size-2-widescreen is-color-primary-green is-max-width-1">
                   {title}
                 </TitleTag>
@@ -42,7 +42,7 @@ export default function ImageRightSection(props) {
               />
             ) : (
               <GatsbyImage
-                image={img}
+                image={getImage(img)}
                 objectFit={"cover"}
                 style={{
                   gridArea: "1/1",

@@ -8,12 +8,12 @@ import ImageRightSection from "../components/ImageRightSection";
 import ClientsSection from "../components/ClientsSection";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, subheading, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <div>
-      <ImageRightSection TitleTag={"h1"} title={"Pomagamy okreslić wartość nieruchomości, w sposób szybki i dokładny."} subheading={"W naszej codziennej pracy zauważyliśmy, że klienci za długo czekają na wykonanie operatu szacunkowego. Operaty między rzeczoznawcami są różnej jakości, nie ma standardów szablonu dokumentu. Dlatego stworzyliśmy platformę do szybkiego i dokładnego generowania operatów szacunkowych, dzięki której możesz jak najszybciej działać."} />
+      <ImageRightSection TitleTag={"h1"} title={title} subheading={subheading} />
       <ClientsSection />
     </div>
   );
@@ -21,6 +21,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -33,6 +34,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        subheading={post.frontmatter.subheading}
         content={post.html}
       />
     </Layout>
@@ -51,6 +53,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        subheading
       }
     }
   }

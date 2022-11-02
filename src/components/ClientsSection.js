@@ -16,7 +16,6 @@ export default function ClientsSection(props) {
   return (
     <section>
       <div className="container is-fullhd mrb-container">
-        <span className="has-text-weight-semibold has-text-centered mrb-label">GRUPY NASZYCH KLIENTÓW</span>
         <h2 className="has-text-weight-semibold has-text-centered is-size-4-mobile is-size-3-tablet is-size-2-widescreen is-color-primary-green">
           Nasi klienci
         </h2>

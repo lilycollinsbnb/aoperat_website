@@ -13,7 +13,7 @@ const liStyle = {
 const separator = ', '
 
 // eslint-disable-next-line
-export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibilities, requirements, whatWeOffer }) => {
+export const CareerOfferTemplate = ({ title, typesOfContract, workingTime, responsibilities, requirements, whatWeOffer }) => {
     return (
         <section className="section section--gradient">
           <div className="container mrb-carrer-container">
@@ -30,7 +30,7 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
                       <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-color-primary-green">
                           {title}
                       </h1>
-                      { typeOfContract && vacancy &&
+                      { typesOfContract && typesOfContract.length > 0 && workingTime && workingTime.length > 0 &&
                         <div className="columns is-multiline is-variable is-8 mrb-columns-wrapper">
                           <div className="column is-flex is-full-mobile is-half-tablet mt-3">
                             <div className="pr-5">                 
@@ -42,7 +42,7 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
                             </div>
                             <div>
                               <h3 className="has-text-weight-semibold is-size-4 no-margin-top is-color-secondary-dark">Rodzaj umowy:</h3>
-                              <p className="mt-1">{typeOfContract.join(separator)}</p>
+                              <p className="mt-1">{typesOfContract.join(separator)}</p>
                             </div>
                           </div>
                           <div className="column is-flex is-full-mobile is-half-tablet mt-3">
@@ -55,13 +55,13 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
                             </div>
                             <div>
                               <h3 className="has-text-weight-semibold is-size-4 no-margin-top is-color-secondary-dark">Rodzaj etatu:</h3>
-                              <p className="mt-1">{vacancy.join(separator)}</p>
+                              <p className="mt-1">{workingTime.join(separator)}</p>
                             </div>
                           </div>
                         </div>
                       }
                     </div>
-                    { responsibilities && 
+                    { responsibilities && responsibilities.length > 0 &&
                       <div>
                           <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                               Zakres obowiązków:
@@ -73,7 +73,7 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
                           </div>
                       </div>
                     }
-                    { requirements &&
+                    { requirements && requirements.length > 0 &&
                       <div>
                           <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                               Wymagania:
@@ -85,7 +85,7 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
                           </div>
                       </div>
                     }
-                    { whatWeOffer &&
+                    { whatWeOffer && whatWeOffer.length > 0 &&
                       <div>
                         <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                             Oferujemy:
@@ -118,8 +118,8 @@ export const CareerOfferTemplate = ({ title, typeOfContract, vacancy, responsibi
 
 CareerOfferTemplate.propTypes = {
     title: PropTypes.string.isRequired,
-    typeOfContract: PropTypes.string.isRequired,
-    vacancy: PropTypes.string.isRequired
+    typesOfContract: PropTypes.array,
+    workingTime: PropTypes.array
 };
 
 const CareerOffer = ({ data }) => {
@@ -132,8 +132,8 @@ const CareerOffer = ({ data }) => {
           responsibilities={offer.frontmatter.responsibilities}
           requirements={offer.frontmatter.requirements}
           whatWeOffer={offer.frontmatter.whatWeOffer}
-          typeOfContract={offer.frontmatter.typeOfContract}
-          vacancy={offer.frontmatter.vacancy}
+          typesOfContract={offer.frontmatter.typesOfContract}
+          workingTime={offer.frontmatter.workingTime}
         />
       </Layout>
     );
@@ -153,8 +153,8 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
-        typeOfContract
-        vacancy
+        typesOfContract
+        workingTime
         responsibilities
         requirements
         whatWeOffer

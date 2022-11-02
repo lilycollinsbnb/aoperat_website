@@ -36,6 +36,33 @@ h1,h2,h3
   .columns
     width: 100%
 
+// Carousel
+
+.carousel-container
+  margin: 2rem auto 3rem auto
+
+.is-carousel-item
+  background-color: $primary-green
+  color: white
+
+.slick-dots li.slick-active button:before
+  color: $primary-green !important
+
+.slick-dots li button:before
+  color: $primary-green !important
+
+.carousel-content-grid-wrapper
+  display: grid
+  grid-template-columns: 1.5fr 97fr 1.5fr
+  align-items: end
+
+.carousel-text-area
+  grid-column: 2
+  background: rgba(76, 156, 98, 0.75)
+  height:45%
+  display: grid
+  text-align: center
+
 // Buttons
 .mrb-button
   padding: 1rem 1.7rem 1rem 1.7rem !important
