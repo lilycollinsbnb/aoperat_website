@@ -40,9 +40,9 @@ const Navbar = class extends React.Component {
       >
         <div className="container is-fullhd mrb-navbar-container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            {/* <Link to="/" className="navbar-item" title="Logo">
               <img src={logoHor} alt="AOperat" style={{ width: "100px" }} className="mrb-logo" />
-            </Link>
+            </Link> */}
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}

@@ -32,7 +32,7 @@ export const BlogPostTemplate = ({
               height={"400px"}
               className="mrb-blog-thumb"
             />
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light is-color-primary-green">
               {title}
             </h1>
             <p>{description}</p>

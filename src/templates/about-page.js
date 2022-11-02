@@ -8,12 +8,12 @@ import ImageRightSection from "../components/ImageRightSection";
 import ClientsSection from "../components/ClientsSection";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, subheading, content, contentComponent }) => {
+export const AboutPageTemplate = ({ pageTitle, subheading, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <div>
-      <ImageRightSection TitleTag={"h1"} title={title} subheading={subheading} />
+      <ImageRightSection TitleTag={"h1"} title={pageTitle} subheading={subheading} img={image} />
       <ClientsSection />
     </div>
   );
@@ -33,8 +33,9 @@ const AboutPage = ({ data }) => {
     <Layout>
       <AboutPageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
+        pageTitle={post.frontmatter.pageTitle}
         subheading={post.frontmatter.subheading}
+        image={post.frontmatter.image}
         content={post.html}
       />
     </Layout>
@@ -52,8 +53,13 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
+        pageTitle
         subheading
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
       }
     }
   }
