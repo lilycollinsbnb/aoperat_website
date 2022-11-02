@@ -6,13 +6,14 @@ import Content, { HTMLContent } from "../components/Content";
 import ImageRightSection from "../components/ImageRightSection";
 
 // eslint-disable-next-line
-export const ProductPageTemplate = ({ pageTitle, subheading, contentSectionTitle, content, contentComponent }) => {
+export const ProductPageTemplate = ({ pageTitle, subheading, image, contentSectionTitle, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <div>
       <ImageRightSection 
       TitleTag={"h1"} 
+      img={image}
       title={pageTitle} 
       subheading={subheading} 
       />
@@ -21,7 +22,7 @@ export const ProductPageTemplate = ({ pageTitle, subheading, contentSectionTitle
           {contentSectionTitle}
         </h2>
         <div className="columns is-multiline is-variable is-8 mrb-columns-wrapper">
-          <div className="column is-flex mt-5">
+          <div className="column is-flex is-justify-content-center">
             <PageContent className="content" content={content} />
           </div>
         </div>
@@ -49,6 +50,7 @@ const ProductPage = ({ data }) => {
         contentComponent={HTMLContent}
         pageTitle={post.frontmatter.pageTitle}
         subheading={post.frontmatter.subheading}
+        image={post.frontmatter.image}
         contentSectionTitle={post.frontmatter.contentSectionTitle}
         content={post.html}
       />
@@ -69,6 +71,11 @@ export const productPageQuery = graphql`
       frontmatter {
         pageTitle
         subheading
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
         contentSectionTitle
       }
     }

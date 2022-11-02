@@ -159,5 +159,6 @@ collections:
             }
           - { label: "Page Title", name: "pageTitle", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Content Section Title", name: "contentSectionTitle", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }

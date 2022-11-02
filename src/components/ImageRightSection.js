@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 
 export default function ImageRightSection(props) {
   const {
@@ -41,7 +42,7 @@ export default function ImageRightSection(props) {
               />
             ) : (
               <GatsbyImage
-                image={img}
+                image={getImage(img)}
                 objectFit={"cover"}
                 style={{
                   gridArea: "1/1",

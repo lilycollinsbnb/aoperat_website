@@ -2,16 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { getImage } from "gatsby-plugin-image";
-import { GatsbyImage } from "gatsby-plugin-image";
 import FullWidthImage from "./FullWidthImage";
-
 
 export default function MainPageCarousel ({items}) {
     return (
     <React.Fragment>
         <section >
-            <div className="container">
+            <div className="container carousel-container">
                {createCarousel(items)}
             </div>
         </section>
@@ -35,9 +32,6 @@ function createCarousel (items) {
         <Slider {...settings}>
 
           {items.map(x => {
-            // const image = x.url 
-            //   ? <img src={x.url} alt="" />
-            //   : <GatsbyImage image={getImage(x)} alt=""></GatsbyImage>
             return (
             <div>
               <FullWidthImage img={x.image} text={x.text} redirectTo={x.redirectTo} >

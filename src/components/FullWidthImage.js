@@ -23,7 +23,7 @@ export default function FullWidthImage(props) {
         {img?.url ? (
           <img
             src={img}
-            objectFit={"fill"}
+            objectFit={"cover"}
             objectPosition={imgPosition}
             style={{
               gridArea: "1/1",

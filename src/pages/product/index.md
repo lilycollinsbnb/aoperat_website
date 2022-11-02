@@ -7,6 +7,7 @@ subheading: Do tej pory proces tworzenia operatu związany był z wykonywaniem
   Europie produkt, którego głównym zadaniem jest usprawnienie pracy
   rzeczoznawców, poprzez zautomatyzowanie procesu tworzenia operatu
   szacunkowego.
+image: /img/aoperat_logo.png
 contentSectionTitle: "Dzięki naszej platformie rzeczoznawcy będą mieli możliwość:"
 ---
 - pozyskiwać zlecenia za pomocą giełdy zleceń,
