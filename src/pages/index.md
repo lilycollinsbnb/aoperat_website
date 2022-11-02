@@ -1,14 +1,14 @@
 ---
 templateKey: index-page
 carouselItems:
-  - image: /img/blog-index.jpg
-    text: W szybki i dokładny sposób określamy wartość nieruchomości.
-    redirecTo: /about
+  - image: /img/1.png
+    text: " W szybki i dokładny sposób określamy wartość nieruchomości."
     redirectTo: /about
-  - image: /img/blog-post-1.jpg
-    text: Asd
+  - image: /img/2.png
+    text: "Dzięki naszemu narzędziu proces sporządzenia operatu jest skrócony nawet
+      do 5 godzin. "
     redirectTo: /product
-  - image: /img/slider-bg.jpg
-    text: Qwe
+  - image: /img/3.png
+    text: " Zapraszamy sprzedawców, aplikantów oraz rzeczoznawców do współpracy!"
     redirectTo: /career
 ---
