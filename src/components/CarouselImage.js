@@ -8,6 +8,7 @@ export default function CarouselImage(props) {
     height = 400,
     img,
     text,
+    imgPosition = "top left",
     redirectTo,
   } = props;
 
@@ -23,6 +24,7 @@ export default function CarouselImage(props) {
           <img
             src={img}
             objectFit={"cover"}
+            objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
@@ -39,6 +41,7 @@ export default function CarouselImage(props) {
           <GatsbyImage
             image={getImage(img)}
             objectFit={"cover"}
+            objectPosition={imgPosition}
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
