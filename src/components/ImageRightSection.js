@@ -9,6 +9,7 @@ export default function ImageRightSection(props) {
     img,
     title,
     subheading,
+    imgPosition = "top right",
   } = props;
   
   return (
@@ -29,6 +30,7 @@ export default function ImageRightSection(props) {
               <img
                 src={img}
                 objectFit={"cover"}
+                objectPosition={imgPosition}
                 style={{
                   gridArea: "1/1",
                   // You can set a maximum height for the image, if you wish.
@@ -43,6 +45,7 @@ export default function ImageRightSection(props) {
             ) : (
               <GatsbyImage
                 image={getImage(img)}
+                objectPosition={imgPosition}
                 objectFit={"cover"}
                 style={{
                   gridArea: "1/1",
@@ -50,6 +53,7 @@ export default function ImageRightSection(props) {
                 }}
                 // You can optionally force an aspect ratio for the generated image
                 aspectratio={3 / 1}
+                layout="fullWidth"
                 // This is a presentational image, so the alt should be an empty string
                 alt=""
                 formats={["auto", "webp", "avif"]}

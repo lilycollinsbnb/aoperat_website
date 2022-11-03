@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FullWidthImage from "./FullWidthImage";
+import CarouselImage from "./CarouselImage";
 
 export default function MainPageCarousel ({items}) {
     return (
@@ -34,8 +34,8 @@ function createCarousel (items) {
           {items.map(x => {
             return (
             <div>
-              <FullWidthImage img={x.image} text={x.text} redirectTo={x.redirectTo} >
-              </FullWidthImage>
+              <CarouselImage img={x.image} text={x.text} redirectTo={x.redirectTo} >
+              </CarouselImage>
             </div>)}
           )}
         </Slider>

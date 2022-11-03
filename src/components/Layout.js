@@ -6,6 +6,8 @@ import "./all.sass";
 import "./a_styles.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import { Link } from "gatsby";
+import logoHor from "../img/logo-hor.svg";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -51,6 +53,13 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
+      <section>
+        <div className="container small-margin-container">
+          <Link to="/" title="Logo">
+            <img objectFit={"fill"} aspectratio={3 / 1} src={logoHor} alt="AOperat" className="mrb-logo" />
+          </Link>
+        </div>
+      </section>
       <div>{children}</div>
       <Footer />
     </div>
