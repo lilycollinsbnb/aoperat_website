@@ -15,6 +15,13 @@ export const AboutPageTemplate = ({ pageTitle, subheading, image, content, conte
     <div>
       <ImageRightSection TitleTag={"h1"} title={pageTitle} subheading={subheading} img={image} />
       <ClientsSection />
+      <div className="container">
+        <div className="columns is-multiline is-variable is-8 mrb-columns-wrapper">
+          <div className="column is-flex">
+            <PageContent className="content" content={content} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

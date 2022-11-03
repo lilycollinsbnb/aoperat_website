@@ -54,9 +54,9 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <section>
-        <div className="container mrb-container">
+        <div className="container small-margin-container">
           <Link to="/" title="Logo">
-            <img objectFit={"fill"} aspectRatio={3 / 1} src={logoHor} alt="AOperat" className="mrb-logo" />
+            <img objectFit={"fill"} aspectratio={3 / 1} src={logoHor} alt="AOperat" className="mrb-logo" />
           </Link>
         </div>
       </section>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
+import MainPageBlogRoll from "../components/MainPageBlogRoll";
 import MainPageCarousel from "../components/MainPageCarousel";
 
 // eslint-disable-next-line
@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
           <h3 className="has-text-weight-semibold is-size-4-mobile is-size-3-tablet is-size-2-widescreen is-color-primary-green">
             Aktualności
           </h3>
-          <BlogRoll />
+          <MainPageBlogRoll />
           <div className="buttons is-centered">
             <Link className="button mrb-button mrb-button-light" to="/blog">
               Czytaj więcej
