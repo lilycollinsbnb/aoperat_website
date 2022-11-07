@@ -9,6 +9,7 @@ description: >-
   Będąc klientem masz możliwość zlecenia stworzenia operatu szacunkowego. Rzeczoznawcy zainteresowani wykonaniem usługi złożą swoje oferty. To podejście pozwala na znalezienie najlepszej oferty spełniającej Twoje oczekiwania. Pokażemy jak to wygląda w praktyce
 featuredpost: true
 featuredimage: /img/aoperat_logo.png
+image: /img/blog-post-thumb.png
 tags:
   - aoperat
   - klient

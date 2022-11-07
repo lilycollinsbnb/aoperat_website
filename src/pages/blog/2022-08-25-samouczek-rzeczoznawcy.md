@@ -12,6 +12,7 @@ description: Rzeczoznawcy są integralną częścią naszej platformy i mogą
   dalszej części artykułu.
 featuredpost: true
 featuredimage: /img/aoperat_logo.png
+image: /img/blog-post-thumb.png
 tags:
   - aoperat
   - poradnik

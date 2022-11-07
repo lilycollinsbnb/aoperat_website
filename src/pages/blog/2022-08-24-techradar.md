@@ -7,6 +7,7 @@ description: Techradar  jest stroną, gdzie opisane są wszystkie technologie,
   opowiemy jak została stworzona.
 featuredpost: true
 featuredimage: /img/techradar.png
+image: /img/blog-post-thumb.png
 tags:
   - aoperat
   - techradar

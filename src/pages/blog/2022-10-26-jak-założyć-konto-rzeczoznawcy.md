@@ -8,6 +8,7 @@ description: "Jeśli po zapoznaniu się z możliwościami jakie daje Ci AOperat,
   sposób zacząć przygodę z naszą platformą. "
 featuredpost: false
 featuredimage: /img/projekt-bez-tytułu-2-.jpg
+image: /img/blog-post-thumb.png
 ---
 
 

@@ -6,6 +6,7 @@ description: Udało się nam stworzyć pierwszy prototyp platformy AOperat i
   materiał demonstrujący w jaki sposób można z niej korzystać.
 featuredpost: false
 featuredimage: /img/prototype.jpg
+image: /img/blog-post-thumb.png
 tags:
   - platforma
   - demo
