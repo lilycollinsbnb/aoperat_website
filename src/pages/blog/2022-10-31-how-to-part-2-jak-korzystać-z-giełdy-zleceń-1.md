@@ -1,18 +1,21 @@
 ---
 templateKey: blog-post
+image: /img/projekt-bez-tytułu.png
 title: "How to part 2: Jak korzystać z giełdy zleceń?"
 date: 2022-10-31T13:15:45.906Z
-description: >
-  W poprzednim artykule wyjaśnialiśmy jak założyć konto rzeczoznawcy. W
-  poniższym artykule omówimy giełdę zleceń, gdzie widoczne są zlecenia na wycenę
-  nieruchomości innych użytkowników.
+description: >-
+  Z poprzedniego artykułu wiesz jak uzyskać status rzeczoznawcy. Teraz możesz w
+  pełni korzystać z giełdy zleceń. A co to dokładnie znaczy? Z poniższego
+  artykułu poznasz odpowiedź na to pytanie.  
+
+
+  Na giełdzie zleceń znajdują się wszystkie zlecenia od klientów, na które będziesz mógł odpowiadać poprzez wysyłanie ofert. 
 featuredpost: false
 featuredimage: /img/projekt-bez-tytułu.png
-image: /img/blog-post-thumb.png
 ---
 ## [](https://aoperat.pl/blog/2022-10-26-jak-za%C5%82o%C5%BCy%C4%87-konto-rzeczoznawcy/)Krok 1
 
-Po zalogowaniu na bocznym pasku zadań należy wybrać pozycję "GIEŁDA ZLECEŃ." Następnie wyświetli się lista zleceń od innych użytkowników. (zdjęcie)
+Po zalogowaniu na bocznym pasku zadań należy wybrać pozycję "GIEŁDA ZLECEŃ." Następnie wyświetli się lista zleceń od innych użytkowników. 
 
 ![](/img/sidebar_client_market.png)
 
@@ -47,4 +50,6 @@ W wysłanych ofertach klient ma możliwość sprawdzenia ofert od rzeczoznawców
 
 W informacjach o zleceniodawcy znajduję się adres zamieszkania oraz adres e-mail zleceniodawcy. Oprócz tego wyświetli się również możliwość wysłania bezpośredniej wiadomości zleceniodawcy. 
 
-Jeśli klient zaakceptuje i opłaci twoją ofertę to po rozwinięciu zlecenia pojawi się nowa opcja STWÓRZ OPERAT z rozwijaną listą do wyboru rodzaju operatu. Po stworzeniu operatu powinien się on pojawić w widoku OPERATY.
+## Krok 3 
+
+Jeśli klient zaakceptuje i opłaci Twoją ofertę to po rozwinięciu zlecenia pojawi się nowa opcja STWÓRZ OPERAT z rozwijaną listą do wyboru rodzaju operatu. Umożliwi to na automatyczne stworzenie dokumentu za pomocą naszego generatora.  Po stworzeniu operatu powinien się on pojawić w widoku OPERATY.
