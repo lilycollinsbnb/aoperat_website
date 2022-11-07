@@ -9,6 +9,7 @@ description: Model subskrypcyjny powstał z myślą o rzeczoznawcach, którzy
   jaki sposób może ułatwić Twoją pracę.
 featuredpost: false
 featuredimage: /img/post_subscription_model.jpg
+image: /img/blog-post-thumb.png
 ---
 ### Po co powstał model subskrypcyjny
 

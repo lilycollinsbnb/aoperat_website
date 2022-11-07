@@ -8,6 +8,7 @@ description: >
   nieruchomości innych użytkowników.
 featuredpost: false
 featuredimage: /img/projekt-bez-tytułu.png
+image: /img/blog-post-thumb.png
 ---
 ## [](https://aoperat.pl/blog/2022-10-26-jak-za%C5%82o%C5%BCy%C4%87-konto-rzeczoznawcy/)Krok 1
 
