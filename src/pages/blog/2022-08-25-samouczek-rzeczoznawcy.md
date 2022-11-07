@@ -1,64 +1,17 @@
 ---
 templateKey: blog-post
+image: /img/blog-post-thumb.png
 title: Samouczek rzeczoznawcy
 date: 2022-08-25T08:57:23.009Z
-description: Rzeczoznawcy są integralną częścią naszej platformy i mogą
-  korzystać z niej na wiele sposobów. Platforma AOperat umożliwia między innymi
-  pozyskiwanie zleceń za pomocą giełdy zleceń, generowanie operatów na podstawie
-  naszych szablonów, podpisywanie operatów podpisem cyfrowym za pomocą profilu
-  zaufanego lub własnym certyfikatem wygenerowanym przez nas oraz wysyłanie
-  podpisanego operatu drogą mailową do klienta. Jeśli chcesz dowiedzieć się w
-  jaki sposób możesz korzystać z naszej platformy zachęcamy do przeczytania
-  dalszej części artykułu.
+description: .....
 featuredpost: true
 featuredimage: /img/aoperat_logo.png
-image: /img/blog-post-thumb.png
 tags:
   - aoperat
   - poradnik
   - samouczek
   - rzeczoznawca
 ---
-### 1. Jak zacząć korzystać z platformy AOperat
-
-Żeby skorzystać z naszej platformy musisz najpierw się zarejestrować. Po zakończeniu rejestracji możesz zalogować się do platformy. Na samym początku zostaje Ci przyznany status klienta. Nie możesz jeszcze generować operatów ani w pełni korzystać z giełdy zleceń, ponieważ widzisz tylko zlecenia wystawione przez siebie. Kolejnym krokiem do uzyskania statusu rzeczoznawcy, który odblokuje możliwość pełnego korzystania z platformy jest wypełnienie formularza. Zaloguj się do platformy i w menu bocznym kliknij przycisk JESTEM RZECZOZNAWCĄ. Po kliknięciu przycisku zostaniesz przeniesiony na stronę formularza.
-
-![](/img/sidebar_client_appraiser_form.png)
-
-![](/img/appraiser_form_1.png)
-
-![](/img/appraiser_form_2.png)
-
-Administracja AOperat zweryfikuje przesłany formularz i przyzna Ci uprawnienia rzeczoznawcy. Uprawnienia rzeczoznawcy dają możliwość przeglądania zleceń wystawionych przez klientów, składania ofert zleceniodawcom, korzystania z naszego generatora operatów, podpisywanie operatów podpisem cyfrowym oraz przesyłanie gotowego operatu do klienta bezpośrednio z platformy. W kolejnych rozdziałach opiszemy jak to robić.
-
-### 2. Giełda zleceń
-
-Po otrzymaniu uprawnień rzeczoznawcy na giełdzie zleceń będziesz widzieć zlecenia innych użytkowników. Aby wyświetlić listę zleceń wybierz pozycję GIEŁDA ZLECEŃ znajdującą się w menu bocznym.
-
-![](/img/sidebar_operator_market.png)
-
-![](/img/market.png)
-
-Po kliknięciu na zlecenie rozwinie się menu umożliwiające uzyskanie większej ilości informacji o zleceniu i złożenie oferty zleceniodawcy. 
-
-![](/img/market_expanded_row.png)
-
-W danych zlecenia znajdziesz informacje takie jak, opis zlecenia, adres nieruchomości, przedmiot i zakres wyceny, numer księgi wieczystej oraz identyfikację nieruchomości. 
-
-![](/img/market_expanded_row_order_data.png)
-
-W informacjach o zleceniodawcy znajdziesz adres zamieszkania i adres e-mail zleceniodawcy. Oprócz tego wyświetli Ci się również możliwość wysłania wiadomości zleceniodawcy. Jeśli jesteś zainteresowany realizacją zlecenia kliknij przycisk składanie oferty i wypełnij rozwinięty formularz. Wymagamy od ciebie podania ceny za jaką podejmiesz się wykonania zlecenia, przewidywanego czasu realizacji zlecenia i krótkiego opisu oferty.
-
-![](/img/market_expanded_row_make_offer.png)
-
-Jeśli klient zaakceptuje i opłaci twoją ofertę to po rozwinięciu zlecenia pojawi się nowa opcja STWÓRZ OPERAT z rozwijaną listą do wyboru rodzaju operatu. Po stworzeniu operatu powinien się on pojawić w widoku OPERATY.
-
-![](/img/market_expanded_row_paid.png)
-
-![](/img/sidebar_operator_operats.png)
-
-![](/img/operats.png)
-
 ### 3. Tworzenie i generowanie operatu
 
 Operat można stworzyć na dwa sposoby, albo do opłaconego zlecenia w widoku GIEŁDA ZLECEŃ tak jak zostało to opisane w rozdziale powyżej albo bez zlecenia w widoku OPERATY. Aby stworzyć operat bez zlecenia w widoku OPERATY kliknij przycisk TWORZENIE OPERATU, który rozwija formularz tworzenia operatu. Do uzupełnienia są 2 pola tytuł i rodzaj operatu. Formularz zatwierdź przyciskiem STWÓRZ OPERAT. 
