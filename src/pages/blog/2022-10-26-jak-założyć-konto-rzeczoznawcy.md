@@ -1,43 +1,31 @@
 ---
 templateKey: blog-post
+image: /img/blog-post-thumb.png
 title: "How to part 1: Jak założyć konto rzeczoznawcy? "
 date: 2022-10-26T18:07:02.807Z
-description: "Jeśli po zapoznaniu się z możliwościami jakie daje Ci AOperat,
-  jesteś zainteresowany korzystaniem z naszej platformy, to zachęcamy do
-  przeczytania poniższego artykułu, w którym wyjaśniamy krok po kroku, w jaki
-  sposób zacząć przygodę z naszą platformą. "
+description: >
+  Posty z serii "How to" omawiają korzystanie z platformy i jest ona skierowana
+  głównie dla rzeczoznawców. W osobnym artykule omówimy w jaki sposób korzystać
+  z platformy będąc klientem szukającym wyceny nieruchomości. 
+
+
+  Pierwszy post poświęcony wyjaśni Ci w jaki sposób jako rzeczoznawca możesz uzyskać status rzeczoznawcy na platformie AOpeart. Status rzeczoznawcy pozwala w pełni korzystać z platformy. Pozwala on m.in. na korzystaniu w pełni z giełdy zleceń.
 featuredpost: false
 featuredimage: /img/projekt-bez-tytułu-2-.jpg
-image: /img/blog-post-thumb.png
 ---
+### Krok 1 Założenie konta
 
+Jeżeli chcesz korzystać z platformy AOperat konieczne jest posiadanie własnego konta. Dlatego, jeżeli jeszcze nie posiadasz konta na platformie to musisz się zarejestrować. 
 
-### **Krok 1 Założenie konta**
+### Krok 2 Przesłanie formularza
 
-Jeżeli chcesz korzystać z platformy AOperat, konieczne jest posiadanie własnego konta. Aby tego dokonać, należy się zarejestrować.
-
-<!--StartFragment-->
-
-### **Krok 2 Uzyskanie statusu rzeczoznawcy** 
-
-Na samym początku zostaje Ci przyznany status klienta, który uniemożliwia generowanie operatów oraz nie pozwala na korzystanie w pełni z giełdy zleceń. Z poziomu klienta możliwe jest tylko wysyłanie zleceń. Aby odblokować możliwość pełnego korzystania z platformy, konieczne jest uzyskanie statusu rzeczoznawcy. W tym celu należy wypełnić i wysłać formularz, który znajdziesz w menu bocznym po kliknięciu w przycisk JESTEM RZECZOZNAWCĄ. Po przesłaniu, twój formularz zostanie zweryfikowany przez administrację AOperat, która odpowiedzialna jest za przyznawanie uprawnień rzeczoznawcy.
+Tuż po założeniu konta  zostaje Ci przyznany status klienta. W celu uzyskania statusu rzeczoznawcy należy wypełnić i wysłać formularz, który znajdziesz w menu bocznym po kliknięciu w przycisk JESTEM RZECZOZNAWCĄ. 
 
 ![](/img/sidebar_client_appraiser_form.png)
-
-
-
-
-
-
-
-
 
 ![](/img/podgląd-formularza.png "Formularz rzeczoznawcy")
 
 <!--StartFragment-->
 
-**Brawo! Udało się! Uprawnienia rzeczoznawcy umożliwiają Ci korzystanie z giełdy zleceń.**
-
-<!--EndFragment-->
-
-<!--EndFragment-->
+### Krok 3 Uzyskanie statusu rzeczoznawcy
+Po przesłaniu, Twój formularz zostanie zweryfikowany przez administrację AOperat, która odpowiedzialna jest za przyznawanie uprawnień rzeczoznawcy. Jeżeli formularz będzie rozpatrzony pozytywnie uzyskasz status rzeczoznawcy.
