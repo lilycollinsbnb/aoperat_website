@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-image: /img/blog-post-thumb.png
-title: "How to part 1: Jak założyć konto rzeczoznawcy? "
+image: /img/projekt-bez-tytułu-2-.jpg
+title: "How to part 1: Jak uzyskać status rzeczoznawcy? "
 date: 2022-10-26T18:07:02.807Z
 description: >
   Posty z serii "How to" omawiają korzystanie z platformy i jest ona skierowana
