@@ -42,8 +42,6 @@ Do skorzystania z naszego generatora operatów służy przycisk POKAŻ WNIOSEK. 
 
 Formularz zawiera 3 sekcje DANE OPISOWE, PLIKI CSV i ZDJĘCIA oraz przycisk GENERUJ. Jeśli dane nie są uzupełnione przycisk GENERUJ jest wyłączony a obok niego pojawia się pytajnik. Po najechaniu na ikonkę pytajnika wyświetla się informacja o tym, które z sekcji nie są jeszcze uzupełnione. Pozostałe przyciski rozwijają poszczególne sekcje.
 
-
-
 ![](/img/projekt-bez-tytułu-1-.png)
 
 ##### **D﻿ane opisowe**
@@ -58,8 +56,6 @@ Zawiera dane transakcyjne. Dane transakcyjne można wprowadzać ręcznie linia p
 
 ![](https://aoperat.pl/img/generate_operat_form_csv.png)
 
-
-
 Ceny można też uzupełniać linia po linii bez importu z pliku klikając przycisk DODAJ LINIĘ i uzupełniając dane. Po kliknięciu na dowolną komórkę danych masz możliwość jej edycji. W tym wypadku również konieczne jest zapisanie zmian przyciskiem WYŚLIJ DANE.
 
 ![](https://aoperat.pl/img/generate_operat_form_csv_edit_line.png)
@@ -70,11 +66,7 @@ Wymagane są zdjęcia budynku, okolicy, granic działki, lokalu i parkingu. Podo
 
 ![](https://aoperat.pl/img/generate_operat_form_images.png)
 
-
-
 Po uzupełnieniu i zapisaniu wszystkich sekcji powinna pojawić się możliwość kliknięcia na przycisk GENERUJ. Kliknij przycisk GENERUJ i poczekaj aż operat zostanie wygenerowany. Jeśli generowanie operatu powiodło się to w widoku OPERATY, po kliknięciu na operat w rozwiniętym menu powinny odblokować się opcje POBIERZ, PODPISZ i WGRAJ PODPISANY OPERAT.
-
-
 
 ### Wgrywanie gotowego operatu
 
@@ -89,3 +81,5 @@ Wszystkie operaty są dostarczane do klienta w formie elektronicznej(plik pdf), 
 Operat możesz podpisać za pomocą generowanego przez nas certyfikatu, profilem zaufanym lub pobrać niepodpisany operat, podpisać go poza naszą platformą i wysłać podpisany operat na naszą platformę. Wszystkie te opcje dostępne są w widoku OPERATY po kliknięciu na operat w rozwiniętym menu jeśli operat został poprawnie wygenerowany lub wgrany na platformę.
 
 ![](https://aoperat.pl/img/operats_operat_after_generation.png)
+
+![](https://aoperat.pl/img/operats_sign_own_certificate.png)
