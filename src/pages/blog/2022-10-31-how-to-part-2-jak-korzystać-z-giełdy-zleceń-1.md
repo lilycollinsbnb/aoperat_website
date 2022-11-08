@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-image: /img/projekt-bez-tytułu.png
+image: /img/how-to-part-2-.png
 title: "How to part 2: Jak korzystać z giełdy zleceń?"
 date: 2022-10-31T13:15:45.906Z
 description: >-
@@ -11,7 +11,7 @@ description: >-
 
   Na giełdzie zleceń znajdują się wszystkie zlecenia od klientów, na które będziesz mógł odpowiadać poprzez wysyłanie ofert. 
 featuredpost: false
-featuredimage: /img/projekt-bez-tytułu.png
+featuredimage: /img/azjatka.png
 ---
 ## [](https://aoperat.pl/blog/2022-10-26-jak-za%C5%82o%C5%BCy%C4%87-konto-rzeczoznawcy/)Krok 1
 
