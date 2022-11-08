@@ -4,7 +4,7 @@ image: /img/blog-post-thumb.png
 title: Samouczek rzeczoznawcy
 date: 2022-08-25T08:57:23.009Z
 description: .....
-featuredpost: true
+featuredpost: false
 featuredimage: /img/aoperat_logo.png
 tags:
   - aoperat
