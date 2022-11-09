@@ -10,4 +10,4 @@ contentSectionTitle: "Korzyści  platformy AOperat:"
 ---
 ![](/img/możliwość-generowania-operatu-z-gotowego-szablonu.png)
 
-![](/img/jako-pierwsi-w-polsce-i-europie-opracowaliśmy-platformę-która-pozwoli-na-zautomatyzowanie-procesu-wyceny-nieruchomości-oraz-na-dokładne-generowania-operatów-szacunkowych..png)
+![](/img/jak-to-działa.png)
