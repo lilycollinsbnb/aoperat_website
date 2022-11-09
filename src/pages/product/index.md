@@ -8,10 +8,6 @@ subheading: Platforma AOperat to PIERWSZY produkt w Polsce i Europie, którego
 image: /img/nieruchomość-1-.png
 contentSectionTitle: "Korzyści  platformy AOperat:"
 ---
-* dostęp do nowych zleceń
-* możliwość generowania 
-* podpisywać operaty za pomocą podpisu cyfrowego,
-* skrócenie pracy z 30 do 5 godzin, 
-* wysłanie podpisanego operatu drogą mailową do klienta.
+![](/img/możliwość-generowania-operatu-z-gotowego-szablonu.png)
 
-![](/img/product_presentation.png)
+![](/img/jako-pierwsi-w-polsce-i-europie-opracowaliśmy-platformę-która-pozwoli-na-zautomatyzowanie-procesu-wyceny-nieruchomości-oraz-na-dokładne-generowania-operatów-szacunkowych..png)
