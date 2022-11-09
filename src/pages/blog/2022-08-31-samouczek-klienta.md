@@ -1,15 +1,15 @@
 ---
 templateKey: blog-post
+image: /img/samouczek.png
 title: Samouczek klienta
-date: 2022-08-31T10:44:14.907Z
+date: 2022-11-09T11:44:14.907Z
 description: >-
   Platforma AOperat służy do szybkiego i wygodnego tworzenia operatów
   szacunkowych nieruchomości.
 
   Będąc klientem masz możliwość zlecenia stworzenia operatu szacunkowego. Rzeczoznawcy zainteresowani wykonaniem usługi złożą swoje oferty. To podejście pozwala na znalezienie najlepszej oferty spełniającej Twoje oczekiwania. Pokażemy jak to wygląda w praktyce
 featuredpost: true
-featuredimage: /img/aoperat_logo.png
-image: /img/blog-post-thumb.png
+featuredimage: /img/samouczek-1.png
 tags:
   - aoperat
   - klient
