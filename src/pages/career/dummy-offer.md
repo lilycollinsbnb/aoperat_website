@@ -1,6 +1,8 @@
 ---
 templateKey: career-offer
 title: dummy
+image: /img/blog-post-thumb.png
+featuredimage: /img/career-thumb.png
 typesOfContract:
   - umowa o zlecenie
 responsibilities:

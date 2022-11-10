@@ -1,6 +1,8 @@
 ---
 templateKey: career-offer
 title: Rzeczoznawca
+image: /img/blog-post-thumb.png
+featuredimage: /img/career-thumb.png
 workingTime:
   - pełny etat
   - 1/2 etatu

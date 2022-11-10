@@ -47,6 +47,8 @@ collections:
           default: "career-offer",
       }
     - { label: "Title", name: "title", widget: "string" }
+    - { label: "Image", name: "image", widget: image }
+    - { label: "Featured Image", name: "featuredimage", widget: image }
     - { 
         label: "Types of contract", 
         name: "typesOfContract", 

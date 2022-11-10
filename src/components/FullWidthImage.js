@@ -1,6 +1,7 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "gatsby-plugin-image";
+import PropTypes from 'prop-types'
 
 export default function FullWidthImage(props) {
     const {
