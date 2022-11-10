@@ -9,6 +9,7 @@ const CareerOfferPreview = ({ entry, getAsset }) => {
     return (
       <CareerOfferTemplate
         title={data.title}
+        image={getAsset(data.image)}
         typesOfContract={data.typesOfContract || [] }
         workingTime={data.workingTime || [] }
         responsibilities={data.responsibilities || [] }

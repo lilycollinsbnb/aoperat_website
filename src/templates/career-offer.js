@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-
-import postThumb from "../img/blog-post-thumb.png";
+import FullWidthImage from "../components/FullWidthImage";
 import carrerIcon1 from "../img/icons/carrer-rodzaj-umowy.svg";
 import carrerIcon2 from "../img/icons/carrer-rodzaj-etatu.svg";
 
@@ -13,20 +12,14 @@ const liStyle = {
 const separator = ', '
 
 // eslint-disable-next-line
-export const CareerOfferTemplate = ({ title, typesOfContract, workingTime, responsibilities, requirements, whatWeOffer }) => {
+export const CareerOfferTemplate = ({ title, image, typesOfContract, workingTime, responsibilities, requirements, whatWeOffer }) => {
     return (
         <section className="section section--gradient">
           <div className="container mrb-carrer-container">
             <div className="columns">
                 <div className="column is-8 is-offset-2">
                     <div>
-                      <img
-                        src={postThumb}
-                        alt="alt z CMSa"
-                        width={"400px"}
-                        height={"400px"}
-                        className="mrb-carrer-thumb"
-                      />
+                      <FullWidthImage img={image}/>
                       <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-color-primary-green">
                           {title}
                       </h1>
@@ -129,6 +122,7 @@ const CareerOffer = ({ data }) => {
       <Layout>
         <CareerOfferTemplate
           title={offer.frontmatter.title}
+          image={offer.frontmatter.image}
           responsibilities={offer.frontmatter.responsibilities}
           requirements={offer.frontmatter.requirements}
           whatWeOffer={offer.frontmatter.whatWeOffer}
@@ -153,6 +147,11 @@ export const pageQuery = graphql`
       id
       frontmatter {
         title
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
         typesOfContract
         workingTime
         responsibilities
