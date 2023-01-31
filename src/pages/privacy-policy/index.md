@@ -14,7 +14,7 @@ ORAZ APLIKACJI AOPERAT
 
 1.2.	Definicje:
 
-1.2.1.	Administrator danych osobowych – AOperat Prosta Spółka Akcyjna z siedzibą w Stalowej Woli, ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy w  Rzeszowie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000969870, NIP: 8652579906, REGON 52191966500000, o kapitale zakładowym w wysokości 6 250,00 zł (wpłaconym w całości) (dalej: „AOperat”);
+1.2.1.	Administrator danych osobowych – AOperat Prosta Spółka Akcyjna z siedzibą w Stalowej Woli, ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola, wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy w  Rzeszowie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000969870, NIP: 8652579906, REGON 52191966500000, (dalej: „AOperat”);
 
 1.2.2.	Portal/Serwis – serwis internetowy AOperat (działający pod adresem https://aoperat.pl);
 
