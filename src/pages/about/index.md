@@ -9,12 +9,14 @@ subheading: We współpracy z rzeczoznawcami tworzymy platformę, która ma na c
   różnią się jakością, ponieważ nie ma standardów szablonu dokumentu.
 image: /img/team-work.png
 ---
-# K﻿im jesteśmy?
+# Kim jesteśmy?
 
 Jesteśmy 6 osobowym startupem.  Na ten moment udało nam się stworzyć tablicę ogłoszeń, która umożliwia klientom wysyłanie zleceń na wycenę nieruchomości, a rzeczoznawcy mają dostęp do nowych klientów. 
 
 ![](/img/zespół.png)
 
+<!---
 # Nasza historia w skrócie
 
 ![](/img/oś-czasu-1-.png)
+-->
