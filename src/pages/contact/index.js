@@ -47,7 +47,6 @@ export default class Index extends React.Component {
           <div className="container is-fullhd mrb-container">
             <div className="columns is-variable is-8">
               <div className="column is-flex is-flex-direction-column is-justify-content-center">
-                  <span className="has-text-weight-semibold mrb-label">AOPERAT</span>
                   <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-color-primary-green">Skontaktuj się z nami</h1>
                   <ContactForm/>
               </div>
