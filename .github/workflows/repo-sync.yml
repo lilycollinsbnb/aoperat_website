@@ -13,7 +13,7 @@ jobs:
     - uses: repo-sync/github-sync@v2
       name: Sync repo to branch
       with:
-        source_repo: ${{ secrets.SOURCE_REPO }}
+        source_repo: https://${{ secrets.ACCESS_TOKEN_REPO_SYNC }}@github.com/bnbsystems/aoperat_website.git
         source_branch: master
         destination_branch: ${{ secrets.INTERMEDIATE_BRANCH }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
