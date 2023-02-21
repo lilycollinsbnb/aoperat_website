@@ -3,6 +3,8 @@ name: Repo Sync
 on:
   schedule: 
   - cron: "* 4 * * *"
+  push:
+    branches: [ master ]
 
 jobs:
   repo-sync:
