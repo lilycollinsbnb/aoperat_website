@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 image: /img/projekt-bez-tytułu-2-.jpg
-title: "Poradnik - część 1: Jak uzyskać status rzeczoznawcy? "
+title: "Poradnik - część I: Jak uzyskać status rzeczoznawcy? "
 date: 2022-10-26T18:07:02.807Z
 description: >
   Posty z serii "Poradnik" omawiają korzystanie z platformy. Są one skierowana
