@@ -13,13 +13,13 @@ description: >
 featuredpost: false
 featuredimage: /img/projekt-bez-tytułu-2-.jpg
 ---
-### Krok 1 Założenie konta
+### Krok 1: Założenie konta
 
 Do korzystania z platformy AOperat konieczne jest posiadanie własnego konta. Jeżeli jeszcze nie posiadasz konta na platformie - musisz się zarejestrować.
 
-### Krok 2 Przesłanie formularza
+### Krok 2: Przesłanie formularza
 
-Po założeniu konta zostaje Ci przyznany "status klienta". W celu uzyskania "statusu rzeczoznawcy" należy wypełnić i wysłać formularz, który znajdziesz w menu bocznym po kliknięciu w przycisk JESTEM RZECZOZNAWCĄ. 
+Po założeniu konta zostaje Ci przyznany "status klienta". W celu uzyskania "statusu rzeczoznawcy" należy wypełnić i wysłać formularz, który pojawia się po kliknięciu w przycisk JESTEM RZECZOZNAWCĄ, znajdujący się w menu bocznym.
 
 ![](/img/sidebar_client_appraiser_form.png)
 
@@ -27,6 +27,6 @@ Po założeniu konta zostaje Ci przyznany "status klienta". W celu uzyskania "st
 
 <!--StartFragment-->
 
-### Krok 3 Uzyskanie statusu rzeczoznawcy
+### Krok 3 : Uzyskanie statusu rzeczoznawcy
 
-Po przesłaniu, Twój formularz zostanie zweryfikowany przez administrację AOperat, która odpowiedzialna jest za przyznawanie uprawnień rzeczoznawcy. Jeżeli formularz będzie rozpatrzony pozytywnie uzyskasz status rzeczoznawcy.
+Po przesłaniu formularza, zostanie on zweryfikowany przez administrację AOperat, która przyznaje uprawnienia rzeczoznawcy na platformie. Jeżeli formularz będzie rozpatrzony pozytywnie - uzyskasz status rzeczoznawcy.
