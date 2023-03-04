@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 image: /img/how-to-part-2-.png
-title: "Poradnik - część II: Jak korzystać z Giełdy Zleceń?"
+title: "Poradnik - część II : Jak korzystać z Giełdy Zleceń?"
 date: 2022-10-31T13:15:45.906Z
 description: >-
   Z poprzedniego artykułu dowiedziałeś się, jak uzyskać "status rzeczoznawcy".
