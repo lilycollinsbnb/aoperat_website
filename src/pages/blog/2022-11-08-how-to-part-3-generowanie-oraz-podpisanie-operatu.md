@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 image: /img/projekt-bez-tytułu.png
-title: "How to part 3: Generowanie oraz podpisanie operatu"
+title: "Poradnik - część III : Generowanie oraz podpisanie operatu"
 date: 2022-11-08T12:20:50.242Z
 description: 'Trzeci artykuł z serii "How to" dotyczy tworzenia operatu oraz
   podpisu elektronicznego, który służy do podpisania takiego operatu przez
