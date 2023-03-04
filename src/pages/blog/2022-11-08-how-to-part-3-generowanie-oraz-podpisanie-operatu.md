@@ -1,16 +1,19 @@
 ---
 templateKey: blog-post
 image: /img/projekt-bez-tytułu.png
-title: "Poradnik - część III : Generowanie oraz podpisanie operatu"
+title: "Poradnik - część III : Generowanie oraz podpisywanie operatu"
 date: 2022-11-08T12:20:50.242Z
-description: 'Trzeci artykuł z serii "How to" dotyczy tworzenia operatu oraz
-  podpisu elektronicznego, który służy do podpisania takiego operatu przez
-  rzeczoznawcę.  Są dwa sposoby tworzenia operatów: po opłaconym zleceniu przez
-  klienta oraz bez zlecenia.'
+description: >-
+  Trzeci artykuł z serii "Poradnik" dotyczy tworzenia operatu oraz podpisu
+  elektronicznego. 
+
+  Są dwa sposoby tworzenia operatów: po opłaconym zleceniu przez klienta oraz bez zlecenia.
+
+  Podpis elektroniczny umożliwia podpisania operatu przez rzeczoznawcę.  
 featuredpost: true
 featuredimage: /img/generowanie-operatu.png
 ---
-# 1.Tworzenie operatu po opłaconym zleceniu.
+# 1. Tworzenie operatu po opłaconym zleceniu.
 
 Pierwszy sposób jest związany bezpośrednio ze zleceniem z giełdy zleceń. Jeżeli klient, na którego zlecenie odpowiedziałeś, zaakceptuje oraz opłaci zlecenie, w rozwinięciu zlecenia pojawi się możliwość stworzenia operatu. 
 
