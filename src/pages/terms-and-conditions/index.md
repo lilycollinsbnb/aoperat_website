@@ -6,7 +6,7 @@ title: Regulamin
 ### O nas
 
 Jesteśmy AOperat Prosta Spółka Akcyjna, z siedzibą w Polsce, wpisaną do rejestru
-przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy
+przedsiębiorców Krajowego Rejestru Sądowego, prowadzonego przez Sąd Rejonowy
 w Rzeszowie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000969870, REGON 52191966500000, NIP 8652579906, działającą pod adresem ul. Eugeniusza Kwiatkowskiego 9, 37-450 Stalowa Wola. Możesz skontaktować się z nami poprzez stronę aoperat.pl.
 
 ### Definicje
