@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import logoFooter from "../img/logo-footer.svg";
 import facebook from "../img/social/facebook.svg";
 import vimeo from "../img/social/vimeo.svg";
+import linkedin from "../img/social/linkedin-white-1.svg";
 
 const Footer = class extends React.Component {
   render() {
@@ -100,6 +101,13 @@ const Footer = class extends React.Component {
                   <img
                     src={vimeo}
                     alt="Vimeo"
+                    style={{ width: "1.1em", height: "1.1em" }}
+                  />
+                </a>
+                <a title="linkedIn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/aoperat/">
+                  <img
+                    src={linkedin}
+                    alt="linkedIn"
                     style={{ width: "1.1em", height: "1.1em" }}
                   />
                 </a>
