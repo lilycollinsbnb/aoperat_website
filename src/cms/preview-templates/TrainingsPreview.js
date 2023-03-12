@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {  TrainingsTemplate } from '../../templates/product-page'
+import {  TrainingsTemplate } from '../../templates/trainings'
 
 const TrainingsPreview = ({ entry, getAsset, widgetFor }) => {
     const data = entry.getIn(['data']).toJS()
