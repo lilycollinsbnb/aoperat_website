@@ -59,7 +59,7 @@ export default function ContactForm() {
                 name={"name"}
                 id={"name"}
                 placeholder={"Imię i nazwisko"}
-                onChange={e => setName(e.target.value) }
+                onChange={e => {e.preventDefault(); setName(e.target.value)} }
                 required={true}
               />
             </div>
@@ -76,7 +76,7 @@ export default function ContactForm() {
                 name={"email"}
                 id={"email"}
                 placeholder={"Adres email"}
-                onChange={e => setEmail(e.target.value) }
+                onChange={e => {e.preventDefault(); setEmail(e.target.value)} }
                 required={true}
               />
             </div>
@@ -93,7 +93,7 @@ export default function ContactForm() {
                 name={"subject"}
                 id={"subject"}
                 placeholder={"Temat"}
-                onChange={e => setSubject(e.target.value) }
+                onChange={e => {e.preventDefault(); setSubject(e.target.value)} }
                 required={true}
               />
             </div>
@@ -104,13 +104,12 @@ export default function ContactForm() {
               Treść wiadomości
             </label>
             <div className="control">
-              <input
-                className="textarea"
-                type={"textarea"}
+              <textarea
+                className="mrb-textarea textarea"
                 name={"message"}
                 id={"message"}
                 placeholder={"Treść wiadomości"}
-                onChange={e => setMessage(e.target.value) }
+                onChange={e => {e.preventDefault(); setMessage(e.target.value)} }
                 required={true}
               />
             </div>
