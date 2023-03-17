@@ -103,7 +103,7 @@ h1,h2,h3
 .mrb-label-hidden
   height: 5px
   text-indent: -10000px
-input[type=text], input[type=email], input[type=textarea]
+input[type=text], input[type=email], input[type=textarea], textarea
   border: none
   border-bottom: 1px solid $secondary-black
   border-radius: 0
@@ -115,6 +115,20 @@ input[type=text], input[type=email], input[type=textarea]
     box-shadow: none
   &::placeholder
     color: $secondary-black
+
+.mrb-textarea
+  border: none
+  border-bottom: 1px solid $secondary-black
+  border-radius: 0
+  box-shadow: none
+  transition: all .2s ease-in-out
+  &:focus-visible, &:focus, &:active
+    outline: none
+    border-color: $primary-green
+    box-shadow: none
+  &::placeholder
+    color: $secondary-black
+
     
 
 // Elements
