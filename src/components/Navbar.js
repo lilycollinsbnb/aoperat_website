@@ -70,6 +70,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item is-size-6" to="/blog">
                 Aktualności
               </Link>
+              <Link className="navbar-item is-size-6" to="/training">
+                Szkolenia
+              </Link>
               <Link className="navbar-item is-size-6" to="/contact">
                 Kontakt
               </Link>
