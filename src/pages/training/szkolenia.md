@@ -19,7 +19,7 @@ description: >
 
   - jak kwestionować operaty
 
-  - jakie są przykładowe sytuacje w których operat szacunkowy może być szczególnie przydatny (wycena nieruchomości przed zakupem, sprzedażą lub wynajmem, kredyt hipoteczny, podział majątku, negocjacje ceny zakupu, podatek od spadku itd. )
+  - jakie są przykładowe sytuacje w których operat szacunkowy może być szczególnie przydatny (wycena nieruchomości przed zakupem, sprzedażą lub wynajmem, kredyt hipoteczny, podział majątku, negocjacje ceny zakupu, podatek od spadku itd.)
 featuredimage: /img/woman-sitting-public-smiling.jpg
 ---
 #### Szkolenia stacjonarne
