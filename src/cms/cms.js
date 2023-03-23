@@ -9,6 +9,7 @@ import CareerOfferPreview from './preview-templates/CareerOfferPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import TermsAndConditionsPagePreview from './preview-templates/TermsAndConditionsPagePreview'
 import PrivacyPolicyPagePreview from './preview-templates/PrivacyPolicyPagePreview'
+import TrainingOfferPostPreview from './preview-templates/TrainingOfferPreview'
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
@@ -20,3 +21,4 @@ CMS.registerPreviewTemplate('career', CareerOfferPreview)
 CMS.registerPreviewTemplate('product', ProductPagePreview)
 CMS.registerPreviewTemplate('terms-and-conditions', TermsAndConditionsPagePreview)
 CMS.registerPreviewTemplate('privacy-policy', PrivacyPolicyPagePreview)
+CMS.registerPreviewTemplate('training', TrainingOfferPostPreview)

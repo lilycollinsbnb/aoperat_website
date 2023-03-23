@@ -6,6 +6,8 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "gatsby-plugin-image";
+import TrainingParticipationForm from "../components/TrainingParticipationForm";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 // eslint-disable-next-line
 export const TrainingOfferTemplate = ({
@@ -65,6 +67,10 @@ export const TrainingOfferTemplate = ({
               {title}
             </h1>
             <OfferContent content={content} />
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light is-color-primary-green">
+              Zostaw swoje dane kontaktowe jeśli chcesz uzyskać informacje o najbliższym szkoleniu
+            </h1>
+            <TrainingParticipationForm title={title} />
           </div>
         </div>
       </div>
@@ -75,7 +81,6 @@ export const TrainingOfferTemplate = ({
 TrainingOfferTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-
   title: PropTypes.string,
   helmet: PropTypes.object,
 };
@@ -85,21 +90,23 @@ const TrainingOffer = ({ data }) => {
 
   return (
     <Layout>
-      <TrainingOfferTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        image={post.frontmatter.image}
-        helmet={
-          <Helmet titleTemplate="%s | Szkolenie">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
-        title={post.frontmatter.title}
-      />
+      <GoogleReCaptchaProvider reCaptchaKey={process.env.GATSBY_GOOGLE_RECAPTCHA_SITE_KEY}>
+        <TrainingOfferTemplate
+          content={post.html}
+          contentComponent={HTMLContent}
+          image={post.frontmatter.image}
+          helmet={
+            <Helmet titleTemplate="%s | Szkolenie">
+              <title>{`${post.frontmatter.title}`}</title>
+              <meta
+                name="description"
+                content={`${post.frontmatter.description}`}
+              />
+            </Helmet>
+          }
+          title={post.frontmatter.title}
+        />
+      </GoogleReCaptchaProvider>
     </Layout>
   );
 };

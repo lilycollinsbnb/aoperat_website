@@ -83,7 +83,7 @@ const Navbar = class extends React.Component {
             <div className="navbar-end has-text-centered">
               <a
                 className="button mrb-button mrb-button-light"
-                href="https://panel2.aoperat.pl/start"
+                href="https://portal.aoperat.pl"
                 target="_blank"
                 rel="noopener noreferrer"
               >
