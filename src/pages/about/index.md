@@ -5,7 +5,7 @@ pageTitle: Pomagamy okreslić wartość nieruchomości, w sposób szybki i dokł
 subheading: We współpracy z rzeczoznawcami tworzymy platformę, która ma na celu
   usprawnienie pracy rzeczoznawców oraz skrócenie czasu oczekiwania na wycenę
   nieruchomości. W naszej codziennej pracy zauważyliśmy, że klienci za długo
-  czekają na wykonanie operatu szacunkowego. Operaty między rzeczoznawcami
+  czekają na wykonanie operatu szacunkowego. Operaty, między rzeczoznawcami
   różnią się jakością, ponieważ nie ma standardów szablonu dokumentu.
 image: /img/team-work.png
 ---
