@@ -1,8 +1,10 @@
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import React, { useState, useEffect, useCallback } from "react";
+import { Link } from "gatsby";
 
 export default function TrainingParticipationForm ({title}) {
   const [email, setEmail] = useState("")
+  const [consentToContact, setConsentToContact] = useState(false)
   const [acceptedTerms, setAcceptedTerms] = useState(false)
   const [success, setSuccess] = useState(false)
 
@@ -22,7 +24,7 @@ export default function TrainingParticipationForm ({title}) {
     const token = await handleReCaptchaVerify()
 
     const data = {
-        name: title, 
+        name: email, 
         email: email, 
         subject: title, 
         message: `${email} wyraża zainteresowanie szkoleniem ${title}`,
@@ -62,20 +64,35 @@ export default function TrainingParticipationForm ({title}) {
               />
             </div>
           </div>
-          <div>
-          Na podstawie art. 10 ust. 2 ustawy o świadczeniu usług drogą elektroniczną wyrażam zgodę na przekazywanie przez AOperat Prosta Spółka Akcyjna, na udostępniony przeze mnie adres e-mail informacji handlowych.
-              <input
+          <div className="mt-6 checkbox-field">
+            <input
+                className="checkbox"
+                type={"checkbox"}
+                name={"consent-to-contact"}
+                id={"consent-to-contact"}
+                checked={consentToContact}
+                onChange={e => {setConsentToContact(!consentToContact)} }
+                required={true}
+                
+              />
+            <label htmlFor="consent-to-contact">Na podstawie art. 10 ust. 2 ustawy o świadczeniu usług drogą elektroniczną wyrażam zgodę na przekazywanie przez AOperat Prosta Spółka Akcyjna, na udostępniony przeze mnie adres e-mail informacji handlowych.</label>
+          </div>
+          <div className="checkbox-field">
+            <input
                 className="checkbox"
                 type={"checkbox"}
                 name={"accepted-terms"}
                 id={"accepted-terms"}
-                style={{marginLeft:"6px"}}
                 checked={acceptedTerms}
                 onChange={e => {setAcceptedTerms(!acceptedTerms)} }
                 required={true}
+                
               />
+            <label htmlFor="accepted-terms">Oświadczam, że zapoznałem(am), się z treścią Regulaminu oraz Polityki Prywatności i akcęptuję zawarte w nich postanowienia.</label>
           </div>
-
+          <div className="mt-6">
+            Przed wyrażeniem zgody prosimy o zapoznanie się z <Link to="/terms-and-conditions">Regulaminem</Link> i <Link to="/privacy-policy">Polityką Prywantości</Link>. Wyrażenie zgody na kontakt drogą mailową i zaakceptowanie postanowień Polityki Prywatności oraz Regulaminu jest dobrowolne ale niezbędne do tego abyśmy mogli się z Tobą skontaktować. Zgodę można w każdej chwili cofnąć kontaktując się z Administratorem Danych Osobwych wskazanym w <Link to="/privacy-policy">Polityce Prywantości</Link>. 
+          </div>
           <div className="field mt-6">
             <button
               className="button is-fullwidth mrb-button mrb-button-light"
@@ -87,6 +104,7 @@ export default function TrainingParticipationForm ({title}) {
               <p className="is-color-primary-green">Wiadomość została wysłana</p>
             }
           </div>
+          
         </form>
     </div>
   );
