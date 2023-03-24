@@ -23,7 +23,7 @@ export const TrainingOfferTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container content mrb-blog-container">
+      <div className="container content mrb-training-container">
         <div className="columns">
           <div className="column is-8 is-offset-2">
             {image?.url ? (
@@ -37,7 +37,7 @@ export const TrainingOfferTemplate = ({
                   width:"100%",
                   maxHeight:"400px"
                 }}
-                className="mrb-blog-thumbg"
+                className="mrb-training-thumb"
                 // You can optionally force an aspect ratio for the generated image
                 aspectratio={3 / 1}
                 // This is a presentational image, so the alt should be an empty string

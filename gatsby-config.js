@@ -11,6 +11,16 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
+      resolve: `gatsby-plugin-linkedin-insight`,
+      options: {
+        partnerId: `${process.env.GATSBY_LINKEDIN_PARTNER_ID}`,
+  
+        // Include LinkedIn Insight in development.
+        // Defaults to false meaning LinkedIn Insight will only be loaded in production.
+        includeInDevelopment: false
+      }
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         sassOptions: {

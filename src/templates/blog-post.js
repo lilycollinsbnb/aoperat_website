@@ -38,7 +38,7 @@ export const BlogPostTemplate = ({
                   width:"100%",
                   maxHeight:"400px"
                 }}
-                className="mrb-blog-thumbg"
+                className="mrb-blog-thumb"
                 // You can optionally force an aspect ratio for the generated image
                 aspectratio={3 / 1}
                 // This is a presentational image, so the alt should be an empty string
