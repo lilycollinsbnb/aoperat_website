@@ -22,6 +22,6 @@ W czasie webinariów uczestnicy:
 * przyglądają się jak szybko generować operat 
 * dowiadują się jak podpisywać dokument za pomocą swojego certyfikatu 
 * korzystają z praktycznych porad - analiza przypadków szczególnych np. cztery różne operaty różniące się numerami ksiąg wieczystych
-* mogą wziąć czynny udział w dyskusji i zadawać pytania
+* bwziąć czynny udział w dyskusji i zadawać pytaniaiorą 
 
 Informacje na temat terminów szkoleń stacjonarnych i webinariów pojawiają się na naszej stronie.
