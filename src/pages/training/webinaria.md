@@ -14,12 +14,14 @@ featuredimage: /img/young-business-people-working-together-project-modern-office
 ---
 #### Webinaria
 
-Nasza firma będzie również prowadzić szkolenia online. Jest to dogodne rozwiązanie dla tych rzeczoznawców, korzy nie mogą być fizycznie obecni na miejscu szkolenia.
-W czasie takich live-ów uczestnicy:
+Nasza firma prowadzi szkolenia online. Jest to dogodne rozwiązanie dla tych rzeczoznawców, którzy nie mogą być fizycznie obecni na szkoleniu stacjonarnym. 
+
+W czasie webinariów uczestnicy:
 
 * zapoznają się z platformą i jej obsługą
-* przyglądną się jak szybko generować operat 
-* dowiedzą się jak podpisywać dokument za pomocą swojego certyfikatu 
-* skorzystają z praktycznych porad - analiza przypadków szczególnych np. 4 różne operaty różniące się numerami ksiąg wieczystych
-* będą mogli wziąć czynny udział w dyskusji i zadawać pytania
-  Informacje na temat terminów szkoleń stacjonarnych i webinariów pojawią się na naszej stronie.
+* przyglądają się jak szybko generować operat 
+* dowiadują się jak podpisywać dokument za pomocą swojego certyfikatu 
+* korzystają z praktycznych porad - analiza przypadków szczególnych np. cztery różne operaty różniące się numerami ksiąg wieczystych
+* mogą wziąć czynny udział w dyskusji i zadawać pytania
+
+Informacje na temat terminów szkoleń stacjonarnych i webinariów pojawiają się na naszej stronie.
