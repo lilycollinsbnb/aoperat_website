@@ -50,6 +50,6 @@ Zwiększenie konkurencyjności – możliwość wyróżnienia się na rynku jako
 6. Weź lekcje na przyszłość! Oszczędź dobę swojego życia dzięki AOperat - cyfrowa wycena nieruchomości.
 7. Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!
 
-Ostatecznie hasło zostało wybrane przez zamawiającego, po wspólnej analizie w zespole. Wybór padł na hasło:
+Ostatecznie hasło zostało wybrane przez zamawiającego, po wspólnej analizie w zespole. Wybór padł na:
 „Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!”
 Powodem była prostota tego hasła i łatwość zapamiętania. Nie jest jednak wykluczone, że nie podejmiemy prób wykorzystania innych propozycji w przyszłości.
