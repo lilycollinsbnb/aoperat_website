@@ -51,5 +51,5 @@ Zwiększenie konkurencyjności – możliwość wyróżnienia się na rynku jako
    7. Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!
 
 Ostatecznie hasło zostało wybrane przez zamawiającego, po wspólnej analizie w zespole. Wybór padł na hasło:
-„Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!.”
+„Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!”
 Powodem była prostota tego hasła i łatwość zapamiętania. Nie jest jednak wykluczone, że nie podejmiemy prób wykorzystania innych propozycji w przyszłości.
