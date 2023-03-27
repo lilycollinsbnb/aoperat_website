@@ -48,7 +48,7 @@ Zwiększenie konkurencyjności – możliwość wyróżnienia się na rynku jako
 4. Sama determinacja to za mało - potrzebujesz trochę czasu! Operaty szacunkowe w 5 godzin! AOperat
 5. Miej czas na swoje marzenia! My zajmiemy się resztą! Operaty szacunkowe w 5 godzin! AOperat
 6. Weź lekcje na przyszłość! Oszczędź dobę swojego życia dzięki AOperat - cyfrowa wycena nieruchomości.
-   7. Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!
+7. Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!
 
 Ostatecznie hasło zostało wybrane przez zamawiającego, po wspólnej analizie w zespole. Wybór padł na hasło:
 „Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!”
