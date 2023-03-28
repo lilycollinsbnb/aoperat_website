@@ -10,9 +10,14 @@ import { withPrefix } from "gatsby";
 import { Link } from "gatsby";
 import logoHor from "../img/logo-hor.svg";
 import {CookieNotice} from "gatsby-cookie-notice";
+import { useLocation } from "@reach/router" // this helps tracking the location
+import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  const location = useLocation()
+  initializeAndTrack(location)
+  
   return (
     <div>
       <Helmet>
@@ -63,9 +68,11 @@ const TemplateWrapper = ({ children }) => {
         </div>
       </section>
       <CookieNotice
-        backgroundClasses="container is-background-secondary-dark"
+        backgroundClasses="container cookie-consent-container is-background-primary-green"
         acceptButtonText="Akceptuję"
         declineButtonText="Odrzucam"
+        buttonWrapperClasses="is-color-primary-green"
+        declineButtonClass="is-color-primary-green"
         personalizeButtonText="Personalizuj"
         personalizeValidationText="Zapisz"
         cookies={[
@@ -73,8 +80,8 @@ const TemplateWrapper = ({ children }) => {
                 {name: 'gatsby-gdpr-google-analytics', editable: true, default: false, title: 'Google Analytics', text: 'Google Analytics to narzędzie statystyczne stworzone przez Google pozwalające na analizę ruchu sieciowego i sposobu korzystania z naszej strony.'},
                 {name: 'gatsby-gdpr-linked-in', editable: true, default: false, title: 'LinkedIn', text: 'LinkedIn Insight Tag pozwala nam na skuteczniej dotrzeć do potencjalnych klientów.'}
           ]}>
-          <h4 className="is-color-primary-green">Ta strona korzysta z plików cookies.</h4>
-          <p className="is-color-white">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie.</p>
+          <h3 className="">Ta strona korzysta z plików cookies.</h3>
+          <p className="mt-3 mb-3">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie. Więcej dowiesz się czytając rozdział Pliki cookies zawarty w Polityce Prywatności <Link to="/privacy-policy" className="mrb-button-link is-color-secondary-dark">klikając tutaj</Link>. </p>
       </CookieNotice>
       <div>{children}</div>
       <Footer />

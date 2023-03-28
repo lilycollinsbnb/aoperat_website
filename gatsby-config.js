@@ -42,7 +42,7 @@ module.exports = {
           cookieName: 'gatsby-gdpr-linked-in', // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production']
+        environments: ['production', 'development']
       },
     },
     {
