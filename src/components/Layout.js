@@ -68,8 +68,10 @@ const TemplateWrapper = ({ children }) => {
         backgroundClasses="container cookie-consent-container is-background-primary-green"
         acceptButtonText="Akceptuję"
         declineButtonText="Odrzucam"
-        buttonWrapperClasses="is-color-primary-green"
-        declineButtonClass="is-color-primary-green"
+        buttonWrapperClasses= "mt-3"
+        wrapperClasses="cookie-consent-buttons-wrapper cookie-notice"
+        cookieListClasses="row cookie-list is-color-white"
+        personalizeButtonClasses="mt-3 btn btn-lg btn-secondary mx-2"
         personalizeButtonText="Personalizuj"
         personalizeValidationText="Zapisz"
         cookies={[
@@ -77,8 +79,8 @@ const TemplateWrapper = ({ children }) => {
                 {name: 'gatsby-gdpr-google-analytics', editable: true, default: false, title: 'Google Analytics', text: 'Google Analytics to narzędzie statystyczne stworzone przez Google pozwalające na analizę ruchu sieciowego i sposobu korzystania z naszej strony.'},
                 {name: 'gatsby-gdpr-linked-in', editable: true, default: false, title: 'LinkedIn', text: 'LinkedIn Insight Tag pozwala nam na skuteczniej dotrzeć do potencjalnych klientów.'}
           ]}>
-          <h3 className="">Ta strona korzysta z plików cookies.</h3>
-          <p className="mt-3 mb-3">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie. Więcej dowiesz się czytając rozdział Pliki cookies zawarty w Polityce Prywatności <Link to="/privacy-policy" className="mrb-button-link is-color-secondary-dark">klikając tutaj</Link>. </p>
+          <h3 className="is-color-white">Ta strona korzysta z plików cookies.</h3>
+          <p className="is-color-white mt-3 mb-3">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie. Więcej dowiesz się czytając rozdział Pliki cookies zawarty w Polityce Prywatności <Link to="/privacy-policy" className="mrb-button-link is-color-white">klikając tutaj</Link>. </p>
       </CookieNotice>
       <div>{children}</div>
       <Footer />
