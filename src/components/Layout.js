@@ -10,13 +10,10 @@ import { withPrefix } from "gatsby";
 import { Link } from "gatsby";
 import logoHor from "../img/logo-hor.svg";
 import {CookieNotice} from "gatsby-cookie-notice";
-import { useLocation } from "@reach/router" // this helps tracking the location
-import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
+
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  const location = useLocation()
-  initializeAndTrack(location)
   
   return (
     <div>
