@@ -1,27 +1,22 @@
 ---
 templateKey: blog-post
 image: /img/corporate-management-strategy-solution-branding-concept.jpg
-title: Hasło reklamowe
+title: Hasło do naszych kampanii marketingowych
 date: 2023-03-27T22:11:27.694Z
-description: Wymyślenie chwytliwego hasła reklamowego jest zawsze wyzwaniem. Nie
-  liczy się tylko to, co nam wydaje się odpowiednie, ale także jak hasło
-  oddziałuje na osobę, która go zamawia. Nie jest też powiedziane, że nawet
-  jeśli hasło podoba się zamawiającemu to będzie skuteczne.
+description: Wymyślenie chwytliwego hasła jest zawsze wyzwaniem. Nie liczy się
+  tylko to, co nam wydaje się odpowiednie, ale także jak hasło oddziałuje na
+  osobę, która go zamawia. Nie jest też powiedziane, że nawet jeśli podoba się
+  zamawiającemu to będzie skuteczne.
 featuredpost: true
 featuredimage: /img/businesspeople-meeting-plan-analysis-graph-company-finance-strat.jpg
 ---
 P﻿ragnęliśmy wymyślić hasło, które zapadnie w pamięć, przyciągnie uwagę potencjalnych klientów i wyróżni nas wśród konkurencji. Abyśmy mogli je swobodnie wykorzystywać w kampaniach marketingowych prowadzonych na naszych  profilach w mediach społecznościowych:
 
-L﻿inkedIn
+[L﻿inkedIn](https://www.linkedin.com/company/aoperat)
 
-<https://www.linkedin.com/company/aoperat>
-
-F﻿acebook
-
-<https://www.facebook.com/aoperatpl>
+[F﻿acebook](<https://www.facebook.com/aoperatpl>)
 
 Tworząc hasła reklamowe, dokonano analizy produktu-platformy  AOperat (szybkość tworzenia, prostota obsługi) oraz potrzeb grupy docelowej - rzeczoznawców majątkowych (oszczędność czasu, efektywność pracy, konkurencyjność). Poszukiwano inspiracji – korzystając z popularnych haseł motywacyjnych, których używają coachowie motywacyjni.
-
 
 Hasła podzielono na cztery grupy - każda podkreśla unikalne cechy produktu
 
@@ -60,7 +55,7 @@ Oszczędność czasu (korzystanie z operatu pozwala zaoszczędzić czas, który 
 7. **Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!**
 
 Ostatecznie hasło zostało wybrane przez zamawiającego, po wspólnej analizie w zespole. Wybór padł na:
-„Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!”
+**„Szybka wycena nieruchomości z AOperat – sprawdź jakie to proste!”**
 Powodem była prostota tego hasła i łatwość zapamiętania. Nie jest jednak wykluczone, że nie podejmiemy prób wykorzystania innych propozycji w przyszłości.
 
 J﻿esteśmy ciekawi, które hasło podoba się Tobie Drogi Czytelniku? Może Ci również przypadło do gustu wybrane przez nas hasło? A może masz inne typy?
