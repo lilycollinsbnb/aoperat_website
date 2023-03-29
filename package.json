@@ -5,9 +5,12 @@
   "author": "Austin Green",
   "dependencies": {
     "@formspree/react": "^2.2.5",
+    "bootstrap": "^5.2.3",
     "bulma": "^0.9.0",
     "dotenv": "^16.0.3",
     "gatsby": "^4.0.0",
+    "gatsby-cookie-notice": "^1.0.6",
+    "gatsby-plugin-gdpr-cookies": "^2.0.9",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-linkedin-insight": "^1.0.1",
     "gatsby-plugin-netlify": "^3.14.0",

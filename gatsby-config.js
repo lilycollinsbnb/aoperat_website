@@ -11,14 +11,39 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-plugin-linkedin-insight`,
+      resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
-        partnerId: `${process.env.GATSBY_LINKEDIN_PARTNER_ID}`,
-  
-        // Include LinkedIn Insight in development.
-        // Defaults to false meaning LinkedIn Insight will only be loaded in production.
-        includeInDevelopment: false
-      }
+        googleAnalytics: {
+          trackingId: `${process.env.GATSBY_GOOGLE_ANALYTICS_ID}`, // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics', // default
+          anonymize: true, // default
+          allowAdFeatures: false // default
+        },
+        googleTagManager: {
+          trackingId: '', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-tagmanager', // default
+          dataLayerName: 'dataLayer', // default
+        },
+        facebookPixel: {
+          pixelId: '', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-facebook-pixel', // default
+        },
+        tikTokPixel: {
+          pixelId: '', // leave empty if you want to disable the tracker
+          cookieName: '', // default
+        },
+        hotjar: {
+          hjid: '',
+          hjsv: '',
+          cookieName: 'gatsby-gdpr-hotjar', // default
+        },
+        linkedin: {
+          trackingId: `${process.env.GATSBY_LINKEDIN_PARTNER_ID}`, // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-linked-in', // default
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
     },
     {
       resolve: "gatsby-plugin-sass",
