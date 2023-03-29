@@ -80,7 +80,7 @@ const TemplateWrapper = ({ children }) => {
                 {name: 'gatsby-gdpr-linked-in', editable: true, default: false, title: 'LinkedIn', text: 'LinkedIn Insight Tag pozwala nam na skuteczniej dotrzeć do potencjalnych klientów.'}
           ]}>
           <h3 className="is-color-white">Ta strona korzysta z plików cookies.</h3>
-          <p className="is-color-white mt-3 mb-3">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie. Więcej dowiesz się czytając rozdział Pliki cookies zawarty w Polityce Prywatności <Link to="/privacy-policy" className="mrb-button-link is-color-white">klikając tutaj</Link>. </p>
+          <p className="is-color-white mt-3 mb-3">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie. Więcej dowiesz się czytając rozdział Pliki cookies zawarty w Polityce Prywatności <Link to="/privacy-policy#cookie-section" className="mrb-button-link is-color-white">klikając tutaj</Link>. </p>
       </CookieNotice>
       <div>{children}</div>
       <Footer />

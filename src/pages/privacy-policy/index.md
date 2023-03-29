@@ -138,6 +138,8 @@ ORAZ APLIKACJI AOPERAT
 
 7.4.	Dane osobowe mogą być przekazywane poza Europejski Obszar Gospodarczy, co jest podyktowane zlokalizowaniem centrów przetwarzania danych podmiotów, jednakże zawsze zgodnie z unijnymi zasadami przekazywania danych osobowych z Unii Europejskiej do Stanów Zjednoczonych w oparciu o tzw. Standard Privacy Shield.
 
+<div id="cookie-section"></div>
+
 #### 8.	Pliki cookies
 
 8.1.	AOperat wykorzystuje pliki cookies własne oraz należące do zewnętrznych podmiotów zgodnie z dyspozycją ustawy z dnia 16 lipca 2004 r. Prawo telekomunikacyjne (Dz. U. 2004 Nr 171 poz. 1800).
