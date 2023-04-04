@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: `${process.env.GATSBY_GOOGLE_ANALYTICS_ID}`, // leave empty if you want to disable the tracker
+          trackingId: `${process.env.GATSBY_GOOGLE_ANALYTICS_ID ?? ''}`, // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-analytics', // default
           anonymize: true, // default
           allowAdFeatures: false // default
@@ -25,7 +25,7 @@ module.exports = {
           dataLayerName: 'dataLayer', // default
         },
         facebookPixel: {
-          pixelId: '', // leave empty if you want to disable the tracker
+          pixelId: `${process.env.GATSBY_FACEBOOK_PIXEL_ID ?? ''}}`, // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-facebook-pixel', // default
         },
         tikTokPixel: {
@@ -38,7 +38,7 @@ module.exports = {
           cookieName: 'gatsby-gdpr-hotjar', // default
         },
         linkedin: {
-          trackingId: `${process.env.GATSBY_LINKEDIN_PARTNER_ID}`, // leave empty if you want to disable the tracker
+          trackingId: `${process.env.GATSBY_LINKEDIN_PARTNER_ID ?? ''}`, // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-linked-in', // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]

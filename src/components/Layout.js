@@ -77,7 +77,8 @@ const TemplateWrapper = ({ children }) => {
         cookies={[
                 {name: 'necessary', editable: false, default: true, title: 'Niezbędne pliki cookie', text: 'Pliki niezbędne do poprawnego funkcjonowania strony.' },
                 {name: 'gatsby-gdpr-google-analytics', editable: true, default: false, title: 'Google Analytics', text: 'Google Analytics to narzędzie statystyczne stworzone przez Google pozwalające na analizę ruchu sieciowego i sposobu korzystania z naszej strony.'},
-                {name: 'gatsby-gdpr-linked-in', editable: true, default: false, title: 'LinkedIn', text: 'LinkedIn Insight Tag pozwala nam na skuteczniej dotrzeć do potencjalnych klientów.'}
+                {name: 'gatsby-gdpr-linked-in', editable: true, default: false, title: 'LinkedIn', text: 'LinkedIn Insight Tag pozwala nam na skuteczniej dotrzeć do potencjalnych klientów.'},
+                {name: 'gatsby-gdpr-facebook-pixel', editable: true, default: false, title: 'Facebook Pixel', text: 'Facebook Pixel pomaga nam w poprawianiu komfortu korzystania ze strony i udostępnia nam informacje w jaki sposób odwiedzający korzystają ze strony i jakie elementy przykuwają ich uwagę.'}
           ]}>
           <h3 className="is-color-white">Ta strona korzysta z plików cookies.</h3>
           <p className="is-color-white mt-3 mb-3">Ty wybierasz, z których plików cookie będziemy mogli korzystać. Korzystając z serwisu zgadzasz się na ich zapis i wykorzystanie plików cookie oraz akceptujesz politykę plików cookie. Więcej dowiesz się czytając rozdział Pliki cookies zawarty w Polityce Prywatności <Link to="/privacy-policy#cookie-section" className="mrb-button-link is-color-white">klikając tutaj</Link>. </p>
