@@ -18,12 +18,12 @@ export const AboutPageTemplate = ({ pageTitle, subheading, image, teamMembers, c
       const membersSlice = teamMembers.slice(i, i+3)
       rows.push(createTeamMemberRow(membersSlice))
     }
-    console.log(rows)
+
     return (rows)
   }
 
   const createTeamMemberRow = (membersSlice) => {
-    console.log(membersSlice)
+
     return (
       <div className="photo-row">
         {membersSlice?.map(member => createTeamMemberHtml(member))}
@@ -76,7 +76,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
-  console.log(post.frontmatter.teamMembers)
+
   return (
     <Layout>
       <AboutPageTemplate
