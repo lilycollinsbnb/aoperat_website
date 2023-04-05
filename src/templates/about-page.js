@@ -6,10 +6,48 @@ import Content, { HTMLContent } from "../components/Content";
 
 import ImageRightSection from "../components/ImageRightSection";
 import ClientsSection from "../components/ClientsSection";
+import PreviewCompatibleImage from './../components/PreviewCompatibleImage'
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ pageTitle, subheading, image, content, contentComponent }) => {
+export const AboutPageTemplate = ({ pageTitle, subheading, image, teamMembers, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
+
+  const createTeamMemberRows = (teamMembers) => {
+    let rows = []
+    for (let i=0; i < teamMembers.length; i+=3) {
+      const membersSlice = teamMembers.slice(i, i+3)
+      rows.push(createTeamMemberRow(membersSlice))
+    }
+    console.log(rows)
+    return (rows)
+  }
+
+  const createTeamMemberRow = (membersSlice) => {
+    console.log(membersSlice)
+    return (
+      <div className="photo-row">
+        {membersSlice?.map(member => createTeamMemberHtml(member))}
+      </div>
+    )
+  }
+
+  const createTeamMemberHtml = (member) => {
+    return (
+      <div className="photo-circle">
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: member.image,
+            alt: `Zdjęcie - ${member.name}`,
+            width: member.image.childImageSharp.gatsbyImageData.width,
+            height:member.image.childImageSharp.gatsbyImageData.height
+          }}
+        />
+        <div class="caption caption-bold">{member.name}</div>
+        <div class="caption">{member.caption1}</div>
+        <div class="caption">{member.caption2}</div>
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -20,8 +58,10 @@ export const AboutPageTemplate = ({ pageTitle, subheading, image, content, conte
           <div className="column is-flex">
             <PageContent className="content" content={content} />
           </div>
+          
         </div>
       </div>
+      {createTeamMemberRows(teamMembers)}
     </div>
   );
 };
@@ -31,11 +71,12 @@ AboutPageTemplate.propTypes = {
   subheading: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  teamMembers: PropTypes.array
 };
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
-
+  console.log(post.frontmatter.teamMembers)
   return (
     <Layout>
       <AboutPageTemplate
@@ -43,6 +84,7 @@ const AboutPage = ({ data }) => {
         pageTitle={post.frontmatter.pageTitle}
         subheading={post.frontmatter.subheading}
         image={post.frontmatter.image}
+        teamMembers={post.frontmatter.teamMembers}
         content={post.html}
       />
     </Layout>
@@ -66,6 +108,21 @@ export const aboutPageQuery = graphql`
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
+        }
+        teamMembers {
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                width: 200
+                height: 200
+                quality: 100
+                transformOptions: {fit: COVER}
+              )
+            }
+          }
+          name
+          caption1
+          caption2
         }
       }
     }

@@ -225,7 +225,39 @@ input[type=text], input[type=email], input[type=textarea], textarea
     margin-bottom: 2rem
     max-height: 100%
 
+// Team photos
 
+.photo-row 
+ display: flex
+ justify-content: center
+ align-items: center
+
+@media (max-width: 768px) 
+ .photo-row 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.photo-circle
+ display: flex
+ flex-direction: column
+ justify-content: center
+ align-items: center
+ text-align: center
+ margin: 10px
+
+.photo-circle img
+ width: 200px
+ height: 200px
+ border-radius: 50%
+ object-fit: cover
+
+.caption 
+ margin-top: 10px
+
+.caption-bold
+ font-weight: bold
 
 // Box - component
 .mrb-box
