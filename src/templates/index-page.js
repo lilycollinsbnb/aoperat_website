@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
   return (
     <div>
     { !isSSR &&
-      <Popup contentStyle={{minWidth: "300px", maxHeight: "600px", overflow: "auto"}} defaultOpen={true} modal>
+      <Popup contentStyle={{minWidth: "300px", maxHeight: "600px", overflow: "auto", borderRadius: "15px", zIndex: "200000"}} defaultOpen={true} modal>
       { close => (
         <div>
           <button type="button" style={{float: "right", backgroundColor: "transparent", border: "none", outline: "none", fontSize: "30px"  }} onClick={close} >
