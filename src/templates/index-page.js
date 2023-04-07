@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   
   return (
     <div>
-      <Popup contentStyle={{minWidth: "330px", maxHeight: "600px", overflow: "auto"}} defaultOpen={true} modal>
+      <Popup contentStyle={{minWidth: "300px", maxHeight: "600px", overflow: "auto"}} defaultOpen={true} modal>
       { close => (
         <div>
           <button type="button" style={{float: "right", backgroundColor: "transparent", border: "none", outline: "none", fontSize: "30px"  }} onClick={close} >
