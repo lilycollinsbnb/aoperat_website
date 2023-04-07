@@ -12,6 +12,11 @@ export const IndexPageTemplate = ({
   carouselItems
 }) => {
   
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+  }
+
   return (
     <div>
       <Popup contentStyle={{minWidth: "300px", maxHeight: "600px", overflow: "auto"}} defaultOpen={true} modal>
@@ -28,7 +33,7 @@ export const IndexPageTemplate = ({
               Chesz uzyskać możliwość <b>darmowego</b> używania platformy AOperat przez <b>3 miesiące</b>? Zostaw swój adres mailowy.
             </div>
             <div className="center-content mt-3">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="field">
                   <label className="label mrb-label-hidden" htmlFor={"email"}>
                     Adres email
@@ -58,7 +63,7 @@ export const IndexPageTemplate = ({
                     />
                   <label htmlFor="consent-to-contact" className="center-content">Na podstawie art. 10 ust. 2 ustawy o świadczeniu usług drogą elektroniczną wyrażam zgodę na przekazywanie przez AOperat Prosta Spółka Akcyjna, na udostępniony przeze mnie adres e-mail informacji handlowych.</label>
                 </div>
-                <button style={{width: "100%"}} className="mt-5 has-text-weight-bold button mrb-button mrb-button-dark">ZAPISZ MNIE</button>
+                <button type="submit" style={{width: "100%"}} className="mt-5 has-text-weight-bold button mrb-button mrb-button-dark">ZAPISZ MNIE</button>
                 
                 <div className="mrb-text-div mt-6">
                   Przed wyrażeniem zgody prosimy o zapoznanie się z <Link to="/terms-and-conditions">Regulaminem</Link> i <Link to="/privacy-policy">Polityką Prywantości</Link>. Wyrażenie zgody na kontakt drogą mailową i zaakceptowanie postanowień Polityki Prywatności oraz Regulaminu jest dobrowolne ale niezbędne do tego abyśmy mogli się z Tobą skontaktować. Zgodę można w każdej chwili cofnąć kontaktując się z Administratorem Danych Osobwych wskazanym w <Link to="/privacy-policy">Polityce Prywantości</Link>. 
