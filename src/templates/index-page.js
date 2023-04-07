@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-    { isSSR &&
+    { !isSSR &&
       <Popup contentStyle={{minWidth: "300px", maxHeight: "600px", overflow: "auto"}} defaultOpen={true} modal>
       { close => (
         <div>
