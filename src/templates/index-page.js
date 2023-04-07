@@ -12,13 +12,15 @@ export const IndexPageTemplate = ({
   carouselItems
 }) => {
   
-  
+  const isSSR = typeof window === "undefined"
+
   const handleSubmit = async (event) => {
     event.preventDefault()
   }
 
   return (
     <div>
+    { isSSR &&
       <Popup contentStyle={{minWidth: "300px", maxHeight: "600px", overflow: "auto"}} defaultOpen={true} modal>
       { close => (
         <div>
@@ -75,6 +77,7 @@ export const IndexPageTemplate = ({
         </div>
       )}
       </Popup>
+    }
       <MainPageCarousel items={carouselItems} />
       <section>
         <div className="container is-fullhd mrb-container">
