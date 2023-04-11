@@ -12,7 +12,6 @@ export const IndexPageTemplate = ({
   carouselItems
 }) => {
   const isSSR = typeof window === "undefined"
-  console.log(window.location)
   return (
     <div>
       { !isSSR &&
