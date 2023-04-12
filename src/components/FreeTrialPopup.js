@@ -49,7 +49,7 @@ export default function FreeTrialPopup () {
                 </div>
                 <div className="mt-5 checkbox-field">
                   <input
-                      className="checkbox"
+                      className="checkbox mr-3"
                       type={"checkbox"}
                       name={"consent-to-contact"}
                       id={"consent-to-contact"}
