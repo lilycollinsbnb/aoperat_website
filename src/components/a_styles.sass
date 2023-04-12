@@ -58,11 +58,25 @@ h1,h2,h3
   display: flex
   flex-flow: row wrap
 
+// Text
+
+.is-medium-large-font
+  font-size: 20px 
+
+.is-small-font
+  font-size: 12px
+
+.is-small-font-2
+  font-size: 14px
+
 // Popup
+
 .popup-content-div
   display: grid
   position: relative
   isolation: isolate
+  grid-template-columns: 1fr auto 1fr
+
 .popup-content-div::after
   position: absolute
   content:""
@@ -75,11 +89,32 @@ h1,h2,h3
   opacity: 0.4
   z-index: -1
 
+.popup-close-button
+  background-color: transparent
+  border: none
+  outline: none
+  font-size: 30px
+  max-height: 30px
+  justify-content: end
+  align-items: right
+  grid-column: 3  
+
+.logo-wrapper
+  margin: auto
+  width: 80%
+  grid-column: 2
+
+.popup-logo
+  height: 80px
+  width: 120px
+  grid-column: 2
 
 .center-content 
   margin: auto
   width: 80%
 
+.popup-form-wrapper
+  grid-column: 2
 
 // Carousel
 
