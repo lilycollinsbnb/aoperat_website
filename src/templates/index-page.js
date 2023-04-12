@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import MainPageBlogRoll from "../components/MainPageBlogRoll";
 import MainPageCarousel from "../components/MainPageCarousel";
-import 'reactjs-popup/dist/index.css';
 import FreeTrialPopup from "../components/FreeTrialPopup";
 
 // eslint-disable-next-line
@@ -14,16 +13,16 @@ export const IndexPageTemplate = ({
   const isSSR = typeof window === "undefined"
   return (
     <div>
-      { !isSSR &&
+      <MainPageCarousel items={carouselItems} />
+      <section>
+        <div className="container is-fullhd mrb-container">
+        { !isSSR &&
         <React.Suspense fallback={<div />}>
           { window.location.href.indexOf('open-popup=true') > -1 &&
             <FreeTrialPopup />
           }
         </React.Suspense>
       }
-      <MainPageCarousel items={carouselItems} />
-      <section>
-        <div className="container is-fullhd mrb-container">
           <h3 className="has-text-weight-semibold is-size-4-mobile is-size-3-tablet is-size-2-widescreen is-color-primary-green">
             Aktualności
           </h3>

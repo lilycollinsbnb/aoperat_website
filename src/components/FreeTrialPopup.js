@@ -1,6 +1,7 @@
 import React from "react"
 import Popup from 'reactjs-popup';
 import { Link } from "gatsby";
+import 'reactjs-popup/dist/index.css';
 
 export default function FreeTrialPopup () {
 
