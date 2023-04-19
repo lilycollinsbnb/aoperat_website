@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import MainPageBlogRoll from "../components/MainPageBlogRoll";
 import MainPageCarousel from "../components/MainPageCarousel";
 import FreeTrialPopup from "../components/FreeTrialPopup";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -12,6 +13,7 @@ export const IndexPageTemplate = ({
 }) => {
   const isSSR = typeof window === "undefined"
   return (
+    <GoogleReCaptchaProvider reCaptchaKey={process.env.GATSBY_GOOGLE_RECAPTCHA_SITE_KEY}>
     <div>
       <MainPageCarousel items={carouselItems} />
       <section>
@@ -35,6 +37,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
     </div>
+    </GoogleReCaptchaProvider>
   );
 };
 
