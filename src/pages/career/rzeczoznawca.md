@@ -1,6 +1,6 @@
 ---
 templateKey: career-offer
-title: Rzeczoznawca
+title: Rzeczoznawca majątkowy
 image: /img/rzeczoznawca.png
 featuredimage: /img/rzeczoznawca.png
 typesOfContract:
