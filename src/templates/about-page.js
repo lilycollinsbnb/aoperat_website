@@ -33,19 +33,21 @@ export const AboutPageTemplate = ({ pageTitle, subheading, image, teamMembers, c
 
   const createTeamMemberHtml = (member) => {
     return (
-      <div className="photo-circle">
+    <>
+    { member.image ?
+      (<div className="photo-circle">
         <PreviewCompatibleImage
           imageInfo={{
             image: member.image,
             alt: `Zdjęcie - ${member.name}`,
-            width: member.image.childImageSharp.gatsbyImageData.width,
-            height:member.image.childImageSharp.gatsbyImageData.height
           }}
         />
         <div class="caption caption-bold">{member.name}</div>
         <div class="caption">{member.caption1}</div>
         <div class="caption">{member.caption2}</div>
-      </div>
+      </div>) : null
+      }
+    </>
     )
   }
 
