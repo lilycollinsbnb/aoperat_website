@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 image: /img/opportunity-3185099_1920.jpg
-title: Szukamy rzeczoznawców do pracy
+title: Szukamy rzeczoznawców do zespółu 
 date: 2023-04-27T11:06:37.982Z
 description: Rzeczoznawca majątkowy to wyjątkowy specjalista, który ma za
   zadanie dokonywać wyceny nieruchomości oraz innych składników majątku. Osoba
