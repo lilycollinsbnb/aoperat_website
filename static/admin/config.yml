@@ -123,7 +123,21 @@ collections:
           }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-          
+
+      - file: "src/pages/affiliate-program/index.md"
+        label: "Affiliate Program Page"
+        name: "affiliate-program"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "affiliate-program-page",
+          }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" } 
+
       - file: "src/pages/terms-and-conditions/index.md"
         label: "Terms And Conditions Page"
         name: "terms-and-conditions"
