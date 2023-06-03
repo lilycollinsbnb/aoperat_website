@@ -7,7 +7,6 @@ typesOfContract:
   - umowa o pracę
   - umowa o zlecenie
   - kontrakt firma-firma
-  - praktyki
 workingTime:
   - pełny etat
   - 1/2 etatu
