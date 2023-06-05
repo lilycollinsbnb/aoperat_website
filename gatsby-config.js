@@ -6,7 +6,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "AOperat",
-    description: "",
+    description: "Wspieramy pracę rzeczoznawców majątkowych.",
     siteUrl: "https://aoperat.pl/"
   },
   plugins: [
