@@ -10,6 +10,7 @@
     "dotenv": "^16.0.3",
     "gatsby": "^4.0.0",
     "gatsby-cookie-notice": "^1.0.6",
+    "gatsby-plugin-feed": "^5.10.0",
     "gatsby-plugin-gdpr-cookies": "^2.0.9",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-linkedin-insight": "^1.0.1",
