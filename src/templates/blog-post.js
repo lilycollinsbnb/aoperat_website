@@ -99,7 +99,7 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
   const ogImage = post.frontmatter.featuredimage ?? post.frontmatter.image
-
+  const { title } = useSiteMetadata();
   return (
     <Layout >
       <BlogPostTemplate
@@ -108,10 +108,18 @@ const BlogPost = ({ data }) => {
         image={post.frontmatter.image}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet >
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
+              content={`${post.frontmatter.description}`}
+            />
+            <meta
+              property="og:title"
+              content={`${title} - ${post.frontmatter.title}`}
+            />
+            <meta
+              property="og:description"
               content={`${post.frontmatter.description}`}
             />
             {
