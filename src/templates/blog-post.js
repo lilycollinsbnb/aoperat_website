@@ -98,9 +98,10 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
+  const ogImage = post.frontmatter.featuredimage ?? post.frontmatter.image
 
   return (
-    <Layout>
+    <Layout >
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -113,6 +114,9 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description}`}
             />
+            {
+              ogImage && <meta property="og:image" content={ogImage} />
+            }
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -139,6 +143,16 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(quality: 100)
+          }
+        }
+        featuredimage {
+          childImageSharp {
+            gatsbyImageData(
+              width: 400
+              height: 400
+              quality: 100
+              transformOptions: {fit: COVER}
+            )
           }
         }
         date(formatString: "MMMM DD, YYYY")
