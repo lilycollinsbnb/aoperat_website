@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "gatsby-plugin-image";
+import useSiteMetadata from "../components/SiteMetadata";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -98,8 +99,9 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
-  const ogImage = post.frontmatter.featuredimage ?? post.frontmatter.image
-  const { title } = useSiteMetadata();
+  const { title, siteUrl } = useSiteMetadata()
+  const ogImage = siteUrl + post.frontmatter.featuredimage?.childImageSharp?.fixed?.src
+
   return (
     <Layout >
       <BlogPostTemplate
@@ -123,7 +125,7 @@ const BlogPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
             {
-              ogImage && <meta property="og:image" content={ogImage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src} />
+              ogImage && <meta property="og:image" content={ogImage} />
             }
           </Helmet>
         }
@@ -155,12 +157,9 @@ export const pageQuery = graphql`
         }
         featuredimage {
           childImageSharp {
-            gatsbyImageData(
-              width: 400
-              height: 400
-              quality: 100
-              transformOptions: {fit: COVER}
-            )
+            fixed(width: 630, height: 1200) {
+              src
+            }
           }
         }
         date(formatString: "MMMM DD, YYYY")
