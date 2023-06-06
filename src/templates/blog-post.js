@@ -115,7 +115,7 @@ const BlogPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
             {
-              ogImage && <meta property="og:image" content={ogImage} />
+              ogImage && <meta property="og:image" content={ogImage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src} />
             }
           </Helmet>
         }
