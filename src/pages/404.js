@@ -3,10 +3,14 @@ import Layout from "../components/Layout";
 
 const NotFoundPage = () => (
   <Layout>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
+    <section>
+      <div className="container is-max-desktop mrb-container">
+        <h1 className="has-text-weight-bold has-text-centered is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-color-primary-green">
+          Błąd 404 - nie znaleziono
+        </h1>
+        <p className="has-text-centered" style={{fontSize:"16px", marginTop:"10px"}}>Podstrona nie istnieje lub została usunięta.</p>
+      </div>
+    </section>
   </Layout>
 );
 
