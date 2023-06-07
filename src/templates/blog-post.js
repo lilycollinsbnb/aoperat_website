@@ -125,9 +125,9 @@ const BlogPost = ({ data }) => {
               property="og:description"
               content={`${post.frontmatter.description}`}
             />
-            {/* {
+            {
               ogImage && <meta property="og:image" content={ogImage} />
-            } */}
+            }
           </Helmet>
         }
         tags={post.frontmatter.tags}
