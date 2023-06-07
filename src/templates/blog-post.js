@@ -124,6 +124,7 @@ const BlogPost = ({ data }) => {
               property="og:description"
               content={`${post.frontmatter.description}`}
             />
+            <meta property="og:type" content="article" />
             {
               ogImage && <meta property="og:image" content={ogImage} />
             }
