@@ -100,9 +100,8 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
   const { title, siteUrl } = useSiteMetadata()
-  console.log(post.frontmatter.featuredimage)
   const ogImage = `${siteUrl}${post.frontmatter.featuredimage?.childImageSharp?.gatsbyImageData?.images.fallback.src}`
-  console.log(ogImage)
+  
   return (
     <Layout >
       <BlogPostTemplate
