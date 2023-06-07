@@ -10,7 +10,7 @@ description: W dzisiejszych czasach, technologia odgrywa kluczową rolę w wielu
   Excela i Worda mogą być wykorzystane w celu zoptymalizowania procesu tworzenia
   operatów szacunkowych.
 featuredpost: false
-featuredimage: /img/download-documents-g307676ef5_1280.png
+featuredimage: /img/analiza-strategia-badanie-informacje-planowanie-biznesowe.jpg
 tags:
   - "#generowanieoperatów #AOperat #ExceliAOperat #nowoczesnenarzędzia
     #wycenanieuchomości #technologia  #Word #rzeczoznawcamajątkowy"
