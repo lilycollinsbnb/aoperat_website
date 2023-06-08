@@ -100,9 +100,8 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
   const { title, siteUrl } = useSiteMetadata()
-  console.log(post.frontmatter.featuredimage)
   const ogImage = `${siteUrl}${post.frontmatter.featuredimage?.childImageSharp?.gatsbyImageData?.images.fallback.src}`
-  console.log(ogImage)
+  
   return (
     <Layout >
       <BlogPostTemplate
@@ -125,6 +124,7 @@ const BlogPost = ({ data }) => {
               property="og:description"
               content={`${post.frontmatter.description}`}
             />
+            <meta property="og:type" content="article" />
             {
               ogImage && <meta property="og:image" content={ogImage} />
             }
@@ -158,7 +158,7 @@ export const pageQuery = graphql`
         }
         featuredimage {
           childImageSharp {
-            gatsbyImageData(layout: FIXED, width: 1200)
+            gatsbyImageData(layout: FIXED, width: 1200, height: 630 )
           }
         }
         date(formatString: "MMMM DD, YYYY")
