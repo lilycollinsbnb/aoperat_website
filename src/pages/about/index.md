@@ -9,18 +9,30 @@ subheading: We współpracy z rzeczoznawcami tworzymy platformę, która ma na c
   różnią się jakością, ponieważ nie ma standardów szablonu dokumentu.
 image: /img/team-work.png
 teamMembers:
-  - image: /img/1.png
-    name: "Arkadiusz Beer"
-    caption1: "PM / CEO"
-    caption2: "Programista +15 lat"
-  - image: /img/2.png
+  - image: /img/team/marcin.png
+    name: "Marcin Flądro"
+    caption1: "Full-stack Developer"
+  - image: /img/team/patryk.png
+    name: "Patryk Zych"
+    caption1: "Full-stack Developer"
+  - image: /img/team/patrycja.png
+    name: "Patrycja Bobulska"
+    caption1: "Marketing"
+  - image: /img/team/borys.png
+    name: "Borysław Bobulski"
+    caption1: "HR"
+  - image: /img/team/dawid.png
     name: "Dawid Beer"
     caption1: "Pomysłodawca"
-    caption2: "Programista +10 lat"
-  - image: /img/2.png
+    caption2: "Co-Founder"
+  - image: /img/team/piotrek.png
     name: "Piotr Stępień"
     caption1: "Rzeczoznawca"
     caption2: "Doktorant prawa"
+  - image: /img/team/arek.png
+    name: "Arkadiusz Beer"
+    caption1: "PM"
+    caption2: "Co-Founder"
 ---
 # Kim jesteśmy?
 
