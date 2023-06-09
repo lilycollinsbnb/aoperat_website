@@ -36,7 +36,7 @@ teamMembers:
 ---
 # Kim jesteśmy?
 
-Jesteśmy 6 osobowym startupem.  Na ten moment udało nam się stworzyć tablicę ogłoszeń, która umożliwia klientom wysyłanie zleceń na wycenę nieruchomości, a rzeczoznawcy mają dostęp do nowych klientów. 
+Jesteśmy zespołem pracującym nad innowacyjnym startupem w branży wycen nieruchomości. Na ten moment udało nam się stworzyć tablicę ogłoszeń, która umożliwia klientom wysyłanie zleceń na wycenę nieruchomości, a rzeczoznawcy mają dostęp do nowych klientów. 
 
 <!-- ![](/img/zespół.png) -->
 
