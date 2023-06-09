@@ -53,7 +53,7 @@ module.exports = {
                       frontmatter {
                         title
                         templateKey
-                        date(formatString: "DD-MM-YYYY")
+                        date(formatString: "YYYY-MM-DD")
                         description
                       }
                     }
