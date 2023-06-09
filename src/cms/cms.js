@@ -10,6 +10,7 @@ import ProductPagePreview from './preview-templates/ProductPagePreview'
 import TermsAndConditionsPagePreview from './preview-templates/TermsAndConditionsPagePreview'
 import PrivacyPolicyPagePreview from './preview-templates/PrivacyPolicyPagePreview'
 import TrainingOfferPostPreview from './preview-templates/TrainingOfferPreview'
+import AffiliateProgamPagePreview from './preview-templates/AffiliateProgramPreview'
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
@@ -22,3 +23,4 @@ CMS.registerPreviewTemplate('product', ProductPagePreview)
 CMS.registerPreviewTemplate('terms-and-conditions', TermsAndConditionsPagePreview)
 CMS.registerPreviewTemplate('privacy-policy', PrivacyPolicyPagePreview)
 CMS.registerPreviewTemplate('training', TrainingOfferPostPreview)
+CMS.registerPreviewTemplate('affiliate-program', AffiliateProgamPagePreview)

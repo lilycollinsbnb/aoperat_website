@@ -2,14 +2,71 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+
 module.exports = {
   siteMetadata: {
     title: "AOperat",
-    description:
-      "",
+    description: "Wspieramy pracę rzeczoznawców majątkowych.",
+    siteUrl: "https://aoperat.pl/"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-feed`,
+      query: `
+      {
+        site {
+          siteMetadata {
+            title
+            description
+            siteUrl
+            site_url: siteUrl
+          }
+        }
+      }
+      `,
+      options: {
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark }}) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  url: encodeURI(site.siteMetadata.siteUrl + edge.node.fields.slug),
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+                ) {
+                  edges {
+                    node {
+                      id
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        templateKey
+                        date(formatString: "YYYY-MM-DD")
+                        description
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "AOperat RSS Feed"
+          }
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {

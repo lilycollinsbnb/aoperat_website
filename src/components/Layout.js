@@ -13,7 +13,7 @@ import {CookieNotice} from "gatsby-cookie-notice";
 
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description, siteUrl } = useSiteMetadata();
   
   return (
     <div>
@@ -50,10 +50,11 @@ const TemplateWrapper = ({ children }) => {
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix("/")}img/logo_with_text.png`}
+          content={`${siteUrl}/img/logo_with_text.png`}
         />
       </Helmet>
       <Navbar />

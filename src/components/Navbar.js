@@ -60,8 +60,8 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item is-size-6" to="/about">
+            <div className="navbar-end has-text-centered">
+            <Link className="navbar-item is-size-6" to="/about">
                 O Nas
               </Link>
               <Link className="navbar-item is-size-6" to="/product">
@@ -79,8 +79,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item is-size-6" to="/career">
                 Kariera
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
+              <Link className="navbar-item is-size-6" to="/affiliate-program">
+                Program partnerski
+              </Link>
               <a
                 className="button mrb-button mrb-button-light"
                 href="https://portal.aoperat.pl"

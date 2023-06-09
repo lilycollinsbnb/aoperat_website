@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "gatsby-plugin-image";
+import useSiteMetadata from "../components/SiteMetadata";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -98,21 +99,35 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
-
+  const { title, siteUrl } = useSiteMetadata()
+  const ogImage = `${siteUrl}${post.frontmatter.featuredimage?.childImageSharp?.gatsbyImageData?.images.fallback.src}`
+  
   return (
-    <Layout>
+    <Layout >
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         image={post.frontmatter.image}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet >
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}
             />
+            <meta
+              property="og:title"
+              content={`${title} - ${post.frontmatter.title}`}
+            />
+            <meta
+              property="og:description"
+              content={`${post.frontmatter.description}`}
+            />
+            <meta property="og:type" content="article" />
+            {
+              ogImage && <meta property="og:image" content={ogImage} />
+            }
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -139,6 +154,11 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(quality: 100)
+          }
+        }
+        featuredimage {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 1200, height: 630 )
           }
         }
         date(formatString: "MMMM DD, YYYY")
