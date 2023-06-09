@@ -185,6 +185,16 @@ collections:
           - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Team Members"
+            name: "teamMembers"
+            widget: "list"
+            allow_add: true
+            label_singular: "member"
+            fields:
+                - {label: Image, name: image, widget: image}
+                - {label: Name, name: name, widget: string}
+                - {label: Caption1, name: caption1, widget: string}
+                - {label: Caption2, name: caption2, widget: string, required: false}
 
       - file: "src/pages/product/index.md"
         label: "Product"
