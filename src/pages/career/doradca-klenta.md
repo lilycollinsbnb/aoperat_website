@@ -5,7 +5,7 @@ image: /img/blog-post-thumb.png
 featuredimage: /img/career-thumb.png
 typesOfContract:
   - umowa o pracę
-  - umowa o zlecenie
+  - umowa zlecenie
   - kontrakt firma-firma
 workingTime:
   - pełny etat
