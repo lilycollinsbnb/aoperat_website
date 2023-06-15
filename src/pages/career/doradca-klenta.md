@@ -12,8 +12,8 @@ workingTime:
   - 1/2 etatu
   - 1/4 etatu
 responsibilities:
-  - Obsługą klientów
-  - Udzielaniem informacji na temat procesu wyceny i odpowiedzią na pytania dotyczące nieruchomości
+  - Obsługa klientów
+  - Udzielanie informacji na temat procesu wyceny i odpowiedzią na pytania dotyczące nieruchomości
   - Pozyskiwanie nowych klientów
 requirements:
   - Komunikatywność i umiejętność pracy z rzeczoznawcami
