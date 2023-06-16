@@ -1,6 +1,6 @@
 ---
 templateKey: career-offer
-title: Aplikant na Rzeczoznawcę majątkowego
+title: Aplikant na rzeczoznawcę majątkowego
 image: /img/blog-post-thumb.png
 featuredimage: /img/career-thumb.png
 typesOfContract:
